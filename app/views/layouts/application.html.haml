@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Wolframpant
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+    = csrf_meta_tags 
+
+  %body
+    %h1 Ellen P. Wolfson
+    .nav.nav-tabs
+      %ul
+        %li= link_to "New Interest", interest_new_path
+        
+  
+    = yield 
