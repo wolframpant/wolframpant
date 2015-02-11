@@ -1,3 +1,225 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.slideUp, .slideRight, .fadInLeft, .fromCorner, .fadeInUp, .rotateInDown, .fadeIn {
+  float: right;
+  border-style: groove;
+  background-color: white;
+  padding: 16px;
+  border-color: gray;
+  text-align: center;
+}
+
+.slideUp {
+    -webkit-animation: slideUp 5s; /* Chrome, Safari, Opera */
+    animation: slideUp 5s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideUp {
+    from {-webkit-transform: rotate(0) translateY(100%);
+          -moz-transform: rotate(0) translateY(100%);      
+          transform: rotate(0) translateY(100%)}
+    to {-webkit-transform: rotate(-3deg) translateY(7%);
+        -moz-transform: rotate(-3deg) translateY(7%);
+        transform: rotate(-3deg) translateY(7%);}
+}
+
+/* Standard syntax */
+@keyframes slideUp {
+    from {-webkit-transform: rotate(0) translateY(100%);
+          -moz-transform: rotate(0) translateY(100%);      
+          transform: rotate(0) translateY(100%)}
+    to {-webkit-transform: rotate(-3deg) translateY(7%);
+        -moz-transform: rotate(-3deg) translateY(7%);
+        transform: rotate(-3deg) translateY(7%);}
+}
+
+.slideUp {
+  -webkit-transform: rotate(-3deg) translateY(7%);
+  -moz-transform: rotate(-3deg) translateY(7%);
+  transform: rotate(-3deg) translateY(7%);
+}
+
+.slideRight {
+    -webkit-animation: slideRight 4s; /* Chrome, Safari, Opera */
+    animation: slideRight 4s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideRight {
+    from {-webkit-transform: rotate(0) translateX(-100%);
+          -moz-transform: rotate(0) translateX(-100%);      
+          transform: rotate(0) translateX(-100%)}
+    to {-webkit-transform: rotate(11deg) translateY(7%);
+        -moz-transform: rotate(11deg) translateY(7%);
+        transform: rotate(11deg) translateY(7%);}
+}
+
+/* Standard syntax */
+@keyframes slideRight {
+    from {-webkit-transform: rotate(0) translateX(-100%);
+          -moz-transform: rotate(0) translateX(-100%);      
+          transform: rotate(0) translateX(-100%)}
+    to {-webkit-transform: rotate(11deg) translateY(7%);
+        -moz-transform: rotate(11deg) translateY(7%);
+        transform: rotate(11deg) translateY(7%);}
+}
+
+.slideRight {
+  -webkit-transform: rotate(11deg) translateY(7%);
+  -moz-transform: rotate(11deg) translateY(7%);
+  transform: rotate(11deg) translateY(7%);
+}
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 3s; /* Chrome, Safari, Opera */
+    animation: fadeInLeft 3s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInLeft {
+    from {-webkit-transform: rotate(0) translateX(100%);
+          -moz-transform: rotate(0) translateX(100%);      
+          transform: rotate(0) translateX(100%)}
+    to {-webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        transform: rotate(-8deg)}
+}
+
+/* Standard syntax */
+@keyframes fadeInLeft {
+    from {-webkit-transform: rotate(0) translateX(100%);
+          -moz-transform: rotate(0) translateX(100%);      
+          transform: rotate(0) translateX(100%)}
+    to {-webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        transform: rotate(-8deg)}
+}
+
+.fadeInLeft {
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  transform: rotate(-8deg)
+}
+
+.fromCorner {
+    -webkit-animation: fromCorner 2s; /* Chrome, Safari, Opera */
+    animation: fadeInLeft 2s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fromCorner {
+    from {-webkit-transform: rotate(0) translateX(-100%) translateY(-100%);
+          -moz-transform: rotate(0) translateX(-100%) translateY(-100%);      
+          transform: rotate(0) translateX(-100%) translateY(-100%)}
+    to {-webkit-transform: translateY(-8deg);
+        -moz-transform: translateY(-8deg);
+        transform: translateY(-8deg)}
+}
+
+/* Standard syntax */
+@keyframes fromCorner {
+    from {-webkit-transform: rotate(0) translateX(-100%) translateY(-100%);
+          -moz-transform: rotate(0) translateX(-100%) translateY(-100%);      
+          transform: rotate(0) translateX(-100%) translateY(-100%)}
+    to {-webkit-transform: translateY(-8deg);
+        -moz-transform: translateY(-8deg);
+        transform: translateY(-8deg)}
+}
+
+.fromCorner {
+  -webkit-transform: translateY(-8deg);
+  -moz-transform: translateY(-8deg);
+  transform: translateY(-8deg);
+} 
+
+.rotateInDown {
+    -webkit-animation: rotateInDown 5.5s; /* Chrome, Safari, Opera */
+    animation: rotateInDown 5.5s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateInDown {
+    from {-webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
+          -moz-transform: rotate(90deg) translateX(100%) translateY(100%);      
+          transform: rotate(90deg) translateX(100%) translateY(100%)}
+    to {-webkit-transform: rotate(-6deg) translateX(20%);
+        -moz-transform: rotate(-6deg) translateX(20%);
+        transform: rotate(-6deg) translateX(20%)}
+}
+
+/* Standard syntax */
+@keyframes rotateInDown {
+    from {-webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
+          -moz-transform: rotate(90deg) translateX(100%) translateY(100%);      
+          transform: rotate(90deg) translateX(100%) translateY(100%)}
+    to {-webkit-transform: rotate(-6deg) translateX(20%);
+        -moz-transform: rotate(-6deg) translateX(20%);
+        transform: rotate(-6deg) translateX(20%)}
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 3.5s; /* Chrome, Safari, Opera */
+    animation: fadeIn 3.5s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1;
+        -webkit-transform: rotate(9deg) translateX(20%);
+        -moz-transform: rotate(9deg) translateX(20%);
+        transform: rotate(9deg) translateX(20%)}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;
+        -webkit-transform: rotate(9deg) translateX(20%);
+        -moz-transform: rotate(9deg) translateX(20%);
+        transform: rotate(9deg) translateX(20%)}
+}
+
+.rotateInDown {
+  -webkit-transform: rotate(-6deg) translateX(20%);
+  -moz-transform: rotate(-6deg) translateX(20%);
+  transform: rotate(-6deg) translateX(20%)
+}
+
+.fadeIn {
+  -webkit-transform: rotate(9deg) translateX(20%);
+  -moz-transform: rotate(9deg) translateX(20%);
+  transform: rotate(9deg) translateX(20%)
+}
+
+.fadeInUp {
+    -webkit-animation: fadeInUp 2.5s; /* Chrome, Safari, Opera */
+    animation: fadeInUp 2.5s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInUp {
+    from {opacity: 0;
+          -webkit-transform: translateY(-100%);
+          -mox-transform: translateY(-100%);
+          transform: translateY(-100%);}
+    to {opacity: 1;
+        -webkit-transform: rotate(5deg) translateX(20%);
+        -moz-transform: rotate(5deg) translateX(20%);
+        transform: rotate(5deg) translateX(20%)}
+}
+
+/* Standard syntax */
+@keyframes fadeInUp {
+    from {opacity: 0;
+          -webkit-transform: translateY(-100%);
+          -mox-transform: translateY(-100%);
+          transform: translateY(-100%);}
+    to {opacity: 1;
+        -webkit-transform: rotate(5deg) translateX(20%);
+        -moz-transform: rotate(5deg) translateX(20%);
+        transform: rotate(5deg) translateX(20%)}
+}
+
+.fadeInUp {
+  -webkit-transform: rotate(5deg) translateX(20%);
+  -moz-transform: rotate(5deg) translateX(20%);
+  transform: rotate(5deg) translateX(20%)
+}
