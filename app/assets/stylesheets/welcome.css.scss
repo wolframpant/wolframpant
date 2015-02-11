@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.slideUp, .slideRight, .fadInLeft, .fromCorner, .fadeInUp, .rotateInDown, .fadeIn {
+.slideUp, .slideRight, .fadInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
   float: right;
   border-style: groove;
   background-color: white;
@@ -12,15 +12,21 @@
   text-align: center;
 }
 
+.slideUp:hover, .slideRight:hover, .fadInLeft:hover, .fromCorner:hover, .rotateFromLeft:hover, .rotateInDown:hover, .fadeIn:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale (1.2);
+  transform: scale(1.2);
+}
+
 .slideUp {
     -webkit-animation: slideUp 5s; /* Chrome, Safari, Opera */
     animation: slideUp 5s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes slideUp {
-    from {-webkit-transform: rotate(0) translateY(100%);
-          -moz-transform: rotate(0) translateY(100%);      
-          transform: rotate(0) translateY(100%)}
+    from {-webkit-transform: rotate(0) translateY(-2000%);
+          -moz-transform: rotate(0) translateY(-2000%);      
+          transform: rotate(0) translateY(-2000%)}
     to {-webkit-transform: rotate(-3deg) translateY(7%);
         -moz-transform: rotate(-3deg) translateY(7%);
         transform: rotate(-3deg) translateY(7%);}
@@ -28,9 +34,9 @@
 
 /* Standard syntax */
 @keyframes slideUp {
-    from {-webkit-transform: rotate(0) translateY(100%);
-          -moz-transform: rotate(0) translateY(100%);      
-          transform: rotate(0) translateY(100%)}
+    from {-webkit-transform: rotate(0) translateY(-2000%);
+          -moz-transform: rotate(0) translateY(-2000%);      
+          transform: rotate(0) translateY(-2000%)}
     to {-webkit-transform: rotate(-3deg) translateY(7%);
         -moz-transform: rotate(-3deg) translateY(7%);
         transform: rotate(-3deg) translateY(7%);}
@@ -48,9 +54,9 @@
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes slideRight {
-    from {-webkit-transform: rotate(0) translateX(-100%);
-          -moz-transform: rotate(0) translateX(-100%);      
-          transform: rotate(0) translateX(-100%)}
+    from {-webkit-transform: rotate(0) translateX(-2000%);
+          -moz-transform: rotate(0) translateX(-2000%);      
+          transform: rotate(0) translateX(-2000%)}
     to {-webkit-transform: rotate(11deg) translateY(7%);
         -moz-transform: rotate(11deg) translateY(7%);
         transform: rotate(11deg) translateY(7%);}
@@ -58,9 +64,9 @@
 
 /* Standard syntax */
 @keyframes slideRight {
-    from {-webkit-transform: rotate(0) translateX(-100%);
-          -moz-transform: rotate(0) translateX(-100%);      
-          transform: rotate(0) translateX(-100%)}
+    from {-webkit-transform: rotate(0) translateX(-2000%);
+          -moz-transform: rotate(0) translateX(-2000%);      
+          transform: rotate(0) translateX(-2000%)}
     to {-webkit-transform: rotate(11deg) translateY(7%);
         -moz-transform: rotate(11deg) translateY(7%);
         transform: rotate(11deg) translateY(7%);}
@@ -78,20 +84,24 @@
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeInLeft {
-    from {-webkit-transform: rotate(0) translateX(100%);
-          -moz-transform: rotate(0) translateX(100%);      
-          transform: rotate(0) translateX(100%)}
-    to {-webkit-transform: rotate(-8deg);
+    from {opacity: 0;
+          -webkit-transform: rotate(0) translateX(2000%);
+          -moz-transform: rotate(0) translateX(2000%);      
+          transform: rotate(0) translateX(2000%)}
+    to {opacity: 1;
+        -webkit-transform: rotate(-8deg);
         -moz-transform: rotate(-8deg);
         transform: rotate(-8deg)}
 }
 
 /* Standard syntax */
 @keyframes fadeInLeft {
-    from {-webkit-transform: rotate(0) translateX(100%);
-          -moz-transform: rotate(0) translateX(100%);      
-          transform: rotate(0) translateX(100%)}
-    to {-webkit-transform: rotate(-8deg);
+    from {opacity: 0;
+          -webkit-transform: rotate(0) translateX(2000%);
+          -moz-transform: rotate(0) translateX(2000%);      
+          transform: rotate(0) translateX(2000%)}
+    to {opacity: 1;
+        -webkit-transform: rotate(-8deg);
         -moz-transform: rotate(-8deg);
         transform: rotate(-8deg)}
 }
@@ -108,9 +118,9 @@
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fromCorner {
-    from {-webkit-transform: rotate(0) translateX(-100%) translateY(-100%);
-          -moz-transform: rotate(0) translateX(-100%) translateY(-100%);      
-          transform: rotate(0) translateX(-100%) translateY(-100%)}
+    from {-webkit-transform: rotate(0) translateX(-500%) translateY(-500%);
+          -moz-transform: rotate(0) translateX(-500%) translateY(-500%);      
+          transform: rotate(0) translateX(-500%) translateY(-500%)}
     to {-webkit-transform: translateY(-8deg);
         -moz-transform: translateY(-8deg);
         transform: translateY(-8deg)}
@@ -118,9 +128,9 @@
 
 /* Standard syntax */
 @keyframes fromCorner {
-    from {-webkit-transform: rotate(0) translateX(-100%) translateY(-100%);
-          -moz-transform: rotate(0) translateX(-100%) translateY(-100%);      
-          transform: rotate(0) translateX(-100%) translateY(-100%)}
+    from {-webkit-transform: rotate(0) translateX(-500%) translateY(-500%);
+          -moz-transform: rotate(0) translateX(-500%) translateY(-500%);      
+          transform: rotate(0) translateX(-500%) translateY(-500%)}
     to {-webkit-transform: translateY(-8deg);
         -moz-transform: translateY(-8deg);
         transform: translateY(-8deg)}
@@ -138,9 +148,9 @@
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rotateInDown {
-    from {-webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
-          -moz-transform: rotate(90deg) translateX(100%) translateY(100%);      
-          transform: rotate(90deg) translateX(100%) translateY(100%)}
+    from {-webkit-transform: rotate(90deg) translateX(500%) translateY(500%);
+          -moz-transform: rotate(90deg) translateX(500%) translateY(500%);      
+          transform: rotate(90deg) translateX(500%) translateY(500%)}
     to {-webkit-transform: rotate(-6deg) translateX(20%);
         -moz-transform: rotate(-6deg) translateX(20%);
         transform: rotate(-6deg) translateX(20%)}
@@ -148,17 +158,17 @@
 
 /* Standard syntax */
 @keyframes rotateInDown {
-    from {-webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
-          -moz-transform: rotate(90deg) translateX(100%) translateY(100%);      
-          transform: rotate(90deg) translateX(100%) translateY(100%)}
+    from {-webkit-transform: rotate(90deg) translateX(500%) translateY(500%);
+          -moz-transform: rotate(90deg) translateX(500%) translateY(500%);      
+          transform: rotate(90deg) translateX(500%) translateY(500%)}
     to {-webkit-transform: rotate(-6deg) translateX(20%);
         -moz-transform: rotate(-6deg) translateX(20%);
         transform: rotate(-6deg) translateX(20%)}
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 3.5s; /* Chrome, Safari, Opera */
-    animation: fadeIn 3.5s;
+    -webkit-animation: fadeIn 6s; /* Chrome, Safari, Opera */
+    animation: fadeIn 6s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeIn {
@@ -190,35 +200,33 @@
   transform: rotate(9deg) translateX(20%)
 }
 
-.fadeInUp {
-    -webkit-animation: fadeInUp 2.5s; /* Chrome, Safari, Opera */
-    animation: fadeInUp 2.5s;
+.rotateFromLeft {
+    -webkit-animation: rotateFromLeft 2.5s; /* Chrome, Safari, Opera */
+    animation: rotateFromLeft 2.5s;
 }
 /* Chrome, Safari, Opera */
-@-webkit-keyframes fadeInUp {
-    from {opacity: 0;
-          -webkit-transform: translateY(-100%);
-          -mox-transform: translateY(-100%);
-          transform: translateY(-100%);}
-    to {opacity: 1;
-        -webkit-transform: rotate(5deg) translateX(20%);
+@-webkit-keyframes rotateFromLeft {
+    from {-webkit-transform: translateX(-2000%) rotate(120deg);
+          -mox-transform: translateX(-2000%) rotate(120deg);
+          transform: translateX(-2000%) rotate(120deg);}
+    to {-webkit-transform: rotate(5deg) translateX(20%);
         -moz-transform: rotate(5deg) translateX(20%);
         transform: rotate(5deg) translateX(20%)}
 }
 
 /* Standard syntax */
-@keyframes fadeInUp {
+@keyframes rotateFromLeft {
     from {opacity: 0;
-          -webkit-transform: translateY(-100%);
-          -mox-transform: translateY(-100%);
-          transform: translateY(-100%);}
+          -webkit-transform: translateX(-2000%) rotate(120deg);
+          -mox-transform: translateX(-2000%) rotate(120deg);
+          transform: translateX(-2000%) rotate(120deg);}
     to {opacity: 1;
         -webkit-transform: rotate(5deg) translateX(20%);
         -moz-transform: rotate(5deg) translateX(20%);
         transform: rotate(5deg) translateX(20%)}
 }
 
-.fadeInUp {
+.rotateFromLeft {
   -webkit-transform: rotate(5deg) translateX(20%);
   -moz-transform: rotate(5deg) translateX(20%);
   transform: rotate(5deg) translateX(20%)

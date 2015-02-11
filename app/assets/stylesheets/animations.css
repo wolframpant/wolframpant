@@ -96,7 +96,7 @@ slideUp
 
 @keyframes slideUp {
 	0% {
-		transform: translateY(100%);
+		transform: translateY(2000%);
 	}
 				
 	100% {
@@ -197,7 +197,7 @@ slideRight
 
 @keyframes slideRight {
 	0% {
-		transform: translateX(-150%);
+		transform: translateX(-2000%);
 	}
 	100% {
 		transform: translateX(0%);

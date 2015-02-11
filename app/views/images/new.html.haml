@@ -1,0 +1,15 @@
+.container
+  %h1 Add Image for #{@event.title}
+  - form_for @image do |f|
+    = f.label :title
+    = f.label :title, size => 50
+    %br
+    %br
+    = f.label :description
+    %br
+    = f.text_area :description, cols: 120, rows: 10
+    %br
+    f.hidden_field :event_id => @event.id
+    %br
+    f.submit 'Submit'
+  
