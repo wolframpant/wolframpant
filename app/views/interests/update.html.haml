@@ -1,0 +1,11 @@
+.container
+  - form_for @interest do |f|
+    = f.label :title
+    = f.text_field :title, :size => 50
+    %br
+    %br
+    = f.label :description
+    %br
+    = f.text_area :description, cols: 120, rows: 10
+    %br
+    = f.submit 'Submit'

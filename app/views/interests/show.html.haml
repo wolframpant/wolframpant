@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-md-4
+      %h1= @interest.title
+      %p= @interest.description
+    .col-md-8
+      %h2 Selected Images
+      - @interest.images.each do |i|
+        .intimg
+          = image_tag(i.location.thumb.url)
