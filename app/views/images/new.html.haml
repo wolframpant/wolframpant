@@ -11,5 +11,9 @@
     %br
     - f.hidden_field :event_id => @event.id
     %br
+    = f.radio_button("prime", "true")
+    = f.radio_button("prime", "false")
+    %br
+    %br
     = f.submit 'Submit'
   

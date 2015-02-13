@@ -3,6 +3,11 @@
     .col-md-4
       %h1= @interest.name
       %p= @interest.description
+      %br
+      - form_for @relationship do |f|
+        = f.select(:event_id, options_for_select(@event_options))
+        = f.hidden_field :interest_id, :value => @interest.id
+        = f.submit 'Save'
     .col-md-8
       %h2 Selected Images
       .events

@@ -50,6 +50,7 @@ class InterestsController < ApplicationController
     @interest = Interest.find(params[:id])
     @events = @interest.events
     @primeimgs = Image.where(prime:true)
+    @relationship = Relationship.new
   end
   
   def index
