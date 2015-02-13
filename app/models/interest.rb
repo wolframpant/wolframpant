@@ -1,6 +1,8 @@
 class Interest < ActiveRecord::Base
   
-  has_and_belongs_to_many :events, join_table: "relationships"
+  has_many :evints
+  has_many :events, through: :evints
   has_many :images, through: :events
   
+ 
 end

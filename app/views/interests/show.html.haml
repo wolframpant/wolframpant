@@ -4,14 +4,8 @@
       %h1= @interest.name
       %p= @interest.description
       %br
-      - form_for @relationship do |f|
-        = f.select(:event_id, options_for_select(@event_options))
+      = form_for @evint do |f|
+        = (collection_select(:evint, :event_id, Event.all, :id, :name, :prompt => :true))
         = f.hidden_field :interest_id, :value => @interest.id
         = f.submit 'Save'
-    .col-md-8
-      %h2 Selected Images
-      .events
-      - @events.each do |e|
-        .eventimg
-          = link_to image_tag(e.image.primary.location.thumb.url), e
-          %p e.name
+    

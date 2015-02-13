@@ -48,7 +48,7 @@ class EventsController < ApplicationController
   
   def show
     @event = Event.find(params[:id])
-    @interests = @event.interests
+   # @interests = @event.interests
     @images = @event.images
   end
   

@@ -1,6 +1,7 @@
 class Event < ActiveRecord::Base
   
+  has_many :evints
   has_many :images
-  has_and_belongs_to_many :interests, join_table: "relationships"
+  has_many :interests, through: :evints
   
 end

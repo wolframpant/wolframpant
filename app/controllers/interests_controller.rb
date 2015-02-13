@@ -6,7 +6,7 @@ class InterestsController < ApplicationController
   
   def create
     @interest = Interest.new(interest_params)
-    authorize @interest
+    
     if @interest.save
       flash[:notice] = 'You have successfully added an interest.'
       redirect_to :back
@@ -18,7 +18,7 @@ class InterestsController < ApplicationController
   
   def edit
     @interest = Interest.find(params[:id])
-    authorize @interest
+    
   end
   
   def update
@@ -48,9 +48,9 @@ class InterestsController < ApplicationController
   
   def show
     @interest = Interest.find(params[:id])
-    @events = @interest.events
     @primeimgs = Image.where(prime:true)
-    @relationship = Relationship.new
+    @evint = Evint.new
+    @event_options = Event.all
   end
   
   def index
