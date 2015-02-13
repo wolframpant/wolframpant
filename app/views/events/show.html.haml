@@ -1,0 +1,11 @@
+.container
+  .event
+    %h1= @event.name
+    %p= @event.description
+    
+  .images
+    = link_to 'Add Images', image_new_path(:event_id:@event.id)
+    - @images.each do |pic|
+    .eventimg
+      = image_tag(pic.thumb.url)
+      %p= @image.name

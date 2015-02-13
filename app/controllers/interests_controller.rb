@@ -48,6 +48,8 @@ class InterestsController < ApplicationController
   
   def show
     @interest = Interest.find(params[:id])
+    @events = @interest.events
+    @primeimgs = Image.where(prime:true)
   end
   
   def index
@@ -57,7 +59,7 @@ class InterestsController < ApplicationController
   private
     
     def interest_params
-      params.require(:interest).permit(:title, :description)
+      params.require(:interest).permit(:name, :description)
     end
     
 end

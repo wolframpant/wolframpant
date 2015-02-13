@@ -4,20 +4,20 @@
       %h1 Hi there! 
     .col-xs-8
       .slideUp
-        = image_tag("031.JPG", size: "200x200") 
+        = image_tag("031.JPG", size: "200x200")
         %p Logic and Puzzles 
       .slideRight
         = image_tag("028.JPG", size: "200x200")  
-        %p Travel 
+        %p Different Cultures 
       .rotateFromLeft
         = image_tag("064.JPG", size: "200x200")  
         %p Analytic Thinking 
       .fromCorner
         = image_tag("354.JPG", size: "200x200")  
-        %p Camping and Nature
+        %p Back to Nature
       .rotateInDown
-        = image_tag("369.JPG", size: "200x200")  
-        %p New Experiences 
+        = link_to image_tag("369.JPG", size: "200x200"), interest_path(id:1)  
+        %p Science 
       .fadeIn
         = image_tag("Mask.jpg", size: "200x200")  
-        %p> Theater and Performing Arts
+        %p> Creative Pursuits
