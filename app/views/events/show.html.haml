@@ -5,7 +5,7 @@
     %p= @event.description
      
   .images
-    = link_to 'Add Images', new_image_path(:event_id => @event.id)
+    = link_to 'Add Images', new_image_path
     - @images.each do |pic|
       .eventimg
         = image_tag(pic.thumb.url)

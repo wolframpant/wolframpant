@@ -10,7 +10,7 @@ class ImagesController < ApplicationController
     @event = Event.find(params[:event_id])
     if @image.save 
       flash[:notice] =  "You have successfully added an image"
-      redirect_to @event
+      redirect_to event_path(:id => :event.id)
     else
       flash[:notice] = "Please try again"
       redirect_to :back

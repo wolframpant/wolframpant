@@ -2,7 +2,7 @@
   %h1 Add Image for #{@event.name}
   = form_for @image do |f|
     = f.label :name
-    = f.label :name, :size => 50
+    = f.text_field :name, :size => 50
     %br
     %br
     = f.label :image
