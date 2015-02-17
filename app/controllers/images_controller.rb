@@ -2,10 +2,12 @@ class ImagesController < ApplicationController
   
   def new
     @image = Image.new
+    authorize @image
   end
   
   def create
     @image = Image.new(image_params)
+    authorize @image
     if @image.save 
       flash[:notice] =  "You have successfully added an image"
       redirect_to :back
@@ -18,6 +20,7 @@ class ImagesController < ApplicationController
   def destroy
     @image = Image.find(params[:id])
     @event = Image.event
+    authorize @image
     if @image.destroy
       flash[:notice] = "You have deleted an image"
       redirect_to @event

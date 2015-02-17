@@ -11,6 +11,8 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 gem 'autoprefixer-rails'
 
+gem 'pundit'
+
 gem 'carrierwave'
 
 gem 'mini_magick'

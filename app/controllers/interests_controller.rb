@@ -2,11 +2,12 @@ class InterestsController < ApplicationController
 
   def new
     @interest = Interest.new
+    authorize @interest
   end
   
   def create
     @interest = Interest.new(interest_params)
-    
+    authorize @interest
     if @interest.save
       flash[:notice] = 'You have successfully added an interest.'
       redirect_to :back
@@ -18,6 +19,7 @@ class InterestsController < ApplicationController
   
   def edit
     @interest = Interest.find(params[:id])
+    authorize @interest
     
   end
   
