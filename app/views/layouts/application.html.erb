@@ -15,6 +15,10 @@
   <li><%= link_to "Events", events_path %></li>
 </ul>
   
+<% if flash[:notice] %>
+  <p class="notices"><%= flash[:notice]%></p>
+<% end %>
+  
 <%= yield %>
 
 </body>

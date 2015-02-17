@@ -50,6 +50,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
    # @interests = @event.interests
     @images = @event.images
+    @image = Image.new
   end
   
   def index

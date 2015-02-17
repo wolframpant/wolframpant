@@ -22,15 +22,13 @@ Event.create!(
 )
 
 Event.create!(
-  name: "Ireland"
+  name: "Ireland",
   description: "It was my sophomore year in college, and I was looking for something interesting to do for the summer. My answer? Go to the smallest village I could find in Ireland--oh, the romance-- and find some sort of job. This was before the Irish Miracle, and people were amazed that I'd shown up in such a poor country looking for work, but I had no trouble. My goal was to experience village life, not to make money, so I quickly found a job as a chambermaid. The village was Castletownshend, population 200, and I worked for the Townshends at the Castle. In the evenings I would go to the village pub, drink a few beers (I never did learn to like the stuff), and sing with my new friends. Everyone had a special song they'd sing when it came their turn. Such a lovely thing!")
 
 Event.create!(
-  name: "Pardes Institute for Jewish Studies"
+  name: "Pardes Institute for Jewish Studies",
   description: "In the year immediately after college, I went to Jerusalem to study at a unique institution. At the time, Pardes was one of very few places in the world where men and women could study traditional Jewish texts, in the traditional manner, together. It was here that I learned many things a Western education had failed to instill in me: the ability to actively engage with a text, to challenge it, to take it into my heart. Living in Jerusalem was a challenge, of course, there is always a sense of danger there and an underlying tension, but it was also beautiful. When life cannot be taken for granted, each moment becomes precious.")
 events = Event.all
-
-Event.create!()
 
 Interest.create!(
   name: "Science",

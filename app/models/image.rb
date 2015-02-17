@@ -1,6 +1,7 @@
 class Image < ActiveRecord::Base
   belongs_to :event
-  mount_uploader :image, ImageUploader
+  
+  mount_uploader :location, ImageUploader
   
   def prime?
     prime == true

@@ -1,12 +1,33 @@
 .container
   
-  .event
+  .col-md-4.event
     %h1= @event.name
     %p= @event.description
      
-  .images
-    = link_to 'Add Images', new_image_path
+  .col-md-8.images
+    %h1 Add Image for #{@event.name}
+    = form_for @image do |f|
+      = f.label :name
+      = f.text_field :name, :size => 50
+      %br
+      %br
+      = f.label :image
+      = f.file_field :location
+      = #f.hidden_field :location_cache 
+      %br
+      - f.hidden_field :event_id, :value => @event.id
+      %br
+      = f.label :prime
+      = f.radio_button(:prime, true)
+      %br
+      = f.label 'not prime'
+      = f.radio_button(:prime, false)
+      %br
+      %br
+      = f.submit 'Submit'
+      %br
+      
     - @images.each do |pic|
       .eventimg
-        = image_tag(pic.thumb.url)
-        %p= @image.name
+        = image_tag(pic.location.full.url)
+        %p= pic.name

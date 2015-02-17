@@ -1,6 +1,6 @@
 .container
   %h1 Add Image for #{@event.name}
-  = form_for @image do |f|
+  = form_for @image, :html => {:multipart => true} do |f|
     = f.label :name
     = f.text_field :name, :size => 50
     %br
