@@ -1,4 +1,5 @@
 Wolframpant::Application.routes.draw do
+  devise_for :users
   resources :interests
   resources :events
   resources :images, only: [:show, :index, :new, :create, :destroy]
