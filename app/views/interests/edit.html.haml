@@ -1,0 +1,15 @@
+.container
+  = form_for @interest do |f|
+    = f.label :name
+    = f.text_field :name, :size => 50
+    %br
+    = f.label :description
+    %br
+    = f.text_area :description, cols: 120, rows: 10
+    %br
+    -# each Interest has one Photo attribute (Events have many Images)
+    %p Add Interest Photo 
+    = f.label :photo
+    = f.file_field :photo
+    %br
+    = f.submit 'Submit'

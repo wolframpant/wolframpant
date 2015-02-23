@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Event.create!(
   name: "Quantum Mechanics",
@@ -35,11 +28,32 @@ Interest.create!(
   description: "I have loved science in general and most fields of science in particular since I was a child. In high school I discovered chemistry--what a beautiful pursuit! The piecing together of the puzzle of how the world works. In college, Freshman Organic Chemistry led me to learn the intricacies of Quantum Mechanics. Then, of course, I discovered Physical Anthropology, which led to wildlife biology and eventually to veterinary school in my desire to participate in the relationship between people and the world around us."
 )
 
-events.each do |e|
-  Evint.create!(
-    event_id:e.id,
-    interest_id:"1"
-  )
-end
+Interest.create!(
+  name: "Back to Nature",
+  description: "I've alwas=ys loved being as close to the natural world as possible, both physically and intellectually."
+)
+
+Interest.create!(
+  name: "Logic and Puzzles",
+  description: "Woo-hoo!")
+
+Interest.create!(
+  name: "Different Places and Cultures",
+  description: "I was going to call this section Travel, but then I realized travel isn't the only way to expose oneself to new cultures.")
+
+Interest.create!(
+  name: "Analytic Thinking",
+  description: "I've applied close examination and questioning of phenomena to the natural world and humanity through science, to ancient Jewish traditions through close text analysis, and to theatre through literary criticism theory.")
+
+Interest.create!(
+  name: "Creative Pursuits",
+  description: "This is an awfully vague title, but it applies in my case to theatre, puppetry, music, and to an appreciation of the performing arts in all their forms.")
+
+User.create!(
+  email: "llnwlfsn@gmail.com",
+  password: "helloworld",
+  password_confirmation: "helloworld",
+  confirmed_at: Time.now
+)
 
 

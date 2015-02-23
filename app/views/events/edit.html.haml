@@ -1,0 +1,32 @@
+%h1 Edit Event #{@event.name}
+
+%p= link_to "Back to Event", @event
+
+- form_for @event do |f|
+  = f.label :name
+  = f.text_field :name, size: 50
+  %br
+  %br
+  = f.label :description
+  %br
+  = f.text_area :description
+  %br
+  %br
+  = f.submit "Submit"
+  
+- form_for @image, :html => {:multipart => true} do |f|
+  = f.label "Name (optional)"
+  = f.text_area :name, size: 50
+  %br
+  = f.file_field :location
+  %br
+  %br
+  = f.label :prime
+  = f.radio_button(:prime, true)
+  %br
+  = f.label 'not prime'
+  = f.radio_button(:prime, false)
+  %br
+  = f.hidden_field :event_id, value => @event.id
+  = f.submit "Submit"
+  

@@ -62,7 +62,7 @@ class InterestsController < ApplicationController
   private
     
     def interest_params
-      params.require(:interest).permit(:name, :description)
+      params.require(:interest).permit(:name, :description, :photo)
     end
     
 end

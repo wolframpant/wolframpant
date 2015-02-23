@@ -1,0 +1,3 @@
+class EvintPolicy < ApplicationPolicy
+  
+end
