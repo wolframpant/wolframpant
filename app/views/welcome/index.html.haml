@@ -6,8 +6,8 @@
       %p I'm a web developer, full stack (primarily with Ruby on Rails) and front end (HTML, CSS, Javascript, jQuery). I've loved puzzles and logic since I was a child, fascinated by math and science. 
     .col-xs-8
       .slideUp
-        = link_to(image_tag(@interest1.photo), @interest1) 
-        %p= link_to @interest1.name, @interest1 
+        = link_to image_tag(@interest1.photo), @interest1
+        %p= link_to @interest1.name, @interest1
       .slideRight
         = image_tag(@interest2.photo)
         %p= link_to @interest2.name, @interest2

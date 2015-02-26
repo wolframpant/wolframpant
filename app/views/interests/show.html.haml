@@ -7,13 +7,14 @@
       %p= link_to 'Edit Interest', edit_interest_path(:id => @interest.id)
       %p Add Events
       = form_for @evint do |f|
-        = (collection_select(:evint, :event_id, Event.all, :id, :name, :prompt => :true))
+        = f.collection_select :event_id, @events, :id, :name, size: 50 
         = f.hidden_field :interest_id, :value => @interest.id
         = f.submit 'Save'
         
     .col-md-8
-      %h1 Selected Images
-      %small please click on an image to view its associated highlight!
-      = for @images.each do |i|
-        = link_to image_tag(@image.location.full.url), @image.event
+      %h1 Related Highlights
+      - @evints.each do |e|
+        = link_to e.evint_event.name, e.evint_event
+        %br
+     
     

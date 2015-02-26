@@ -50,9 +50,10 @@ class InterestsController < ApplicationController
   
   def show
     @interest = Interest.find(params[:id])
-    @primeimgs = Image.where(prime:true)
+    # @primeimgs = @interest.primeimgs
     @evint = Evint.new
-    @event_options = Event.all
+    @events = Event.all
+    @evints = @interest.evints
   end
   
   def index

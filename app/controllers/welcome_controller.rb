@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+
   def index
     
     @interest1 = Interest.find_by(:id => '1')
@@ -9,4 +10,5 @@ class WelcomeController < ApplicationController
     @interest6 = Interest.find_by(:id => '6')
     
   end
+  
 end
