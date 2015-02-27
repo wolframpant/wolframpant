@@ -6,7 +6,7 @@
       %p I'm a web developer, full stack (primarily with Ruby on Rails) and front end (HTML, CSS, Javascript, jQuery). I've loved puzzles and logic since I was a child, fascinated by math and science. 
     .col-xs-8
       .slideUp
-        = link_to image_tag(@interest1.photo, size: "200x200"), @interest1
+        = link_to image_tag(@interest1.photo), @interest1
         %p= @interest1.name
       .slideRight
         = link_to image_tag(@interest2.photo, size: "200x200"), @interest2
@@ -22,4 +22,4 @@
         %p= @interest5.name
       .fadeIn
         = link_to image_tag(@interest6.photo, size: "200x200"), @interest6
-        %p= link_to @interest6.name, @interest6
+        %p= @interest6.name
