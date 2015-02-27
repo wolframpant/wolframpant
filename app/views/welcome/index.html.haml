@@ -6,20 +6,20 @@
       %p I'm a web developer, full stack (primarily with Ruby on Rails) and front end (HTML, CSS, Javascript, jQuery). I've loved puzzles and logic since I was a child, fascinated by math and science. 
     .col-xs-8
       .slideUp
-        = link_to image_tag(@interest1.photo), @interest1
-        %p= link_to @interest1.name, @interest1
+        = link_to image_tag(@interest1.photo, size: "200x200"), @interest1
+        %p= @interest1.name
       .slideRight
-        = image_tag(@interest2.photo)
-        %p= link_to @interest2.name, @interest2
+        = link_to image_tag(@interest2.photo, size: "200x200"), @interest2
+        %p= @interest2.name
       .rotateFromLeft
-        = image_tag(@interest3.photo)
-        %p= link_to @interest3.name, @interest3
+        = link_to image_tag(@interest3.photo, size: "200x200"), @interest3
+        %p= @interest3.name
       .fromCorner
-        = image_tag(@interest4.photo)
-        %p= link_to @interest4.name, @interest4
+        = link_to image_tag(@interest4.photo, size: "200x200"), @interest4
+        %p= @interest4.name
       .rotateInDown
-        = image_tag(@interest5.photo)
-        %p= link_to @interest5.name, @interest5
+        = link_to image_tag(@interest5.photo, size: "200x200"), @interest5
+        %p= @interest5.name
       .fadeIn
-        = image_tag(@interest6.photo)
+        = link_to image_tag(@interest6.photo, size: "200x200"), @interest6
         %p= link_to @interest6.name, @interest6
