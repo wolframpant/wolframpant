@@ -3,7 +3,7 @@
 <head>
   <title>Wolframpant</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative|Federo' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,7 +13,9 @@
   <h1 class="epw">ELLEN P. WOLFSON</h1>
   <ul class="nav nav-tabs">
     <li><%= link_to "HOME", welcome_index_path %></li>
-    <li><%= link_to "RESUME", welcome_about_path %></li>
+    <li><%= link_to "RESUME", '/Resume.pdf', :target => '_blank' %></li>
+    <li><%= link_to "PORTFOLIO", welcome_about_path %></li>
+    <li><%= link_to "LINKEDIN PROFILE", "www.linkedin.com/in/wolframpant" %></li>
   </ul>
   
   <% if flash[:notice] %>

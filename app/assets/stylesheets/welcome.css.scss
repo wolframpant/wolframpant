@@ -11,22 +11,11 @@
   padding: 10px;
   border-color: #F200FF;
   text-align: center;
-<<<<<<< HEAD
-  width: 30%;
-  height: auto;
-}
-
-img {
-  width: 90%;
-  height: auto;
-=======
-  color: black;
 }
 
 .intimg img {
   width: 90%;
   height: auto;  
->>>>>>> styling
 }
 
 .slideUp:hover, .slideRight:hover, .fadInLeft:hover, .fromCorner:hover, .rotateFromLeft:hover, .rotateInDown:hover, .fadeIn:hover {
@@ -247,4 +236,10 @@ img {
   -webkit-transform: rotate(5deg) translateX(20%);
   -moz-transform: rotate(5deg) translateX(20%);
   transform: rotate(5deg) translateX(20%)
+}
+
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
 }
