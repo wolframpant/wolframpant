@@ -1,25 +1,37 @@
 .container
   .row
     .col-xs-4
-      %h1 Hi there! 
-      %p I'm Ellen. I call this website "wolframpant" partly in honor of my last name, Wolfson, and partly in honor of my love for things medieval. I imagine my family crest, had  we had one, would have featured wolves rampant . . .
-      %p I'm a web developer, full stack (primarily with Ruby on Rails) and front end (HTML, CSS, Javascript, jQuery). I've loved puzzles and logic since I was a child, fascinated by math and science. 
+      %h2 Hi there! 
+      %p Thank you for visiting my website.
+      %p I'm a web developer, full stack (primarily with Ruby on Rails, HTML, CSS, Javascript, jQuery). I've loved puzzles and logic since I was a child, and coding for the web allows me to indulge those loves while maintaining a level of creativity that I also value.
+      %p I put together this website to complement my resume (which is included here) and my #{ link_to "LinkedIn profile", "www.linkedin.com/in/wolframpant" }. Here you can find a bit of information and lots of pictures from various places I've been, projects I've been involved with--basically, selected highlights from my work and personal lives.
+      %p <em> The images to the right reflect various passions and themes that have been interwoven in my life. Click on an image to see a bit about that theme, and to see highlights that relate to it.
+      
     .col-xs-8
       .slideUp
-        = link_to image_tag(@interest1.photo, size: "200x200"), @interest1
+        .intimg
+          = link_to image_tag(@interest1.photo), @interest1
         %p= @interest1.name
       .slideRight
-        = link_to image_tag(@interest2.photo, size: "200x200"), @interest2
+        .intimg
+          = link_to image_tag(@interest2.photo), @interest2
         %p= @interest2.name
       .rotateFromLeft
-        = link_to image_tag(@interest3.photo, size: "200x200"), @interest3
+        .intimg
+          = link_to image_tag( @interest3.photo ), @interest3
         %p= @interest3.name
       .fromCorner
-        = link_to image_tag(@interest4.photo, size: "200x200"), @interest4
+        .intimg
+          = link_to image_tag(@interest4.photo), @interest4
         %p= @interest4.name
       .rotateInDown
-        = link_to image_tag(@interest5.photo, size: "200x200"), @interest5
+        .intimg
+          = link_to image_tag(@interest5.photo), @interest5
         %p= @interest5.name
       .fadeIn
-        = link_to image_tag(@interest6.photo, size: "200x200"), @interest6
-        %p= link_to @interest6.name, @interest6
+        .intimg
+          = link_to image_tag(@interest6.photo), @interest6
+        %p= @interest6.name
+      %br
+      %br
+      %br

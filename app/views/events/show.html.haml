@@ -1,33 +1,37 @@
 .container
   
-  .col-md-4.event
+  .event
     %h1= @event.name
     %p= @event.description
      
-  .col-md-8.images
-    %h1 Add Image for #{@event.name}
-    = form_for @image do |f|
-      = f.label :name
-      = f.text_field :name, :size => 50
-      %br
-      %br
-      = f.label :image
-      = f.file_field :location
-      = #f.hidden_field :location_cache 
-      %br
-      - f.hidden_field :event_id, :value => @event.id
-      %br
-      = f.label :prime
-      = f.radio_button(:prime, true)
-      %br
-      = f.label 'not prime'
-      = f.radio_button(:prime, false)
-      %br
-      %br
-      = f.submit 'Submit'
-      %br
-      
-    - @images.each do |pic|
-      .eventimg
-        = image_tag(pic.location.full.url)
-        %p= pic.name
+  .images
+    - if current_user
+      %h1 Add Image for #{@event.name}
+      = form_for @image do |f|
+        = f.label :name
+        = f.text_field :name, :size => 50
+        %br
+        %br
+        = f.label :image
+        = f.file_field :location
+        = f.hidden_field :location_cache 
+        %br
+        = f.hidden_field :event_id, :value => @event.id
+        %br
+        = f.label :prime
+        = f.radio_button(:prime, true)
+        %br
+        = f.label 'not prime'
+        = f.radio_button(:prime, false)
+        %br
+        %br
+        = f.submit 'Submit'
+        %br
+    
+    -if @images.exists?
+      - @images.each do |pic|
+        .eventimg
+          = image_tag(pic.location.full.url)
+          %p= pic.name
+          - if current_user
+            = link_to "Delete", {:id => pic.id, :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete this image?'}

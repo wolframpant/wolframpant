@@ -21,6 +21,31 @@ Event.create!(
 Event.create!(
   name: "Pardes Institute for Jewish Studies",
   description: "In the year immediately after college, I went to Jerusalem to study at a unique institution. At the time, Pardes was one of very few places in the world where men and women could study traditional Jewish texts, in the traditional manner, together. It was here that I learned many things a Western education had failed to instill in me: the ability to actively engage with a text, to challenge it, to take it into my heart. Living in Jerusalem was a challenge, of course, there is always a sense of danger there and an underlying tension, but it was also beautiful. When life cannot be taken for granted, each moment becomes precious.")
+
+Event.create!(
+  name: "Nepal",
+  description: "--")
+
+Event.create!(
+  name: "Burning Man",
+  description: "DJ Christ Superstar")
+
+Event.create!(
+  name: "London",
+  description: "Medieval Tournaments--and one or two plays.")
+
+Event.create!(
+  name: "Master's Thesis",
+  description: "Medieval Tournaments")
+
+Event.create!(
+  name: "'The Knight of the Burning Pestle'",
+  description: "--")
+
+Event.create!(
+  name: "The School for Literary Criticism",
+  description: "--")
+
 events = Event.all
 
 Interest.create!(

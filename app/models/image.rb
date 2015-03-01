@@ -5,7 +5,11 @@ class Image < ActiveRecord::Base
   mount_uploader :location, ImageUploader
   
   def prime?
-    prime == true
+    :prime == true
+  end
+  
+  def resume
+    :name => "Resume"
   end
   
 end
