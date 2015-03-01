@@ -3,23 +3,26 @@
 <head>
   <title>Wolframpant</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+  <h1 class="epw">ELLEN P. WOLFSON</h1>
+  <ul class="nav nav-tabs">
+    <li><%= link_to "HOME", welcome_index_path %></li>
+    <li><%= link_to "RESUME", welcome_about_path %></li>
+  </ul>
+  
+  <% if flash[:notice] %>
+    <p class="notices"><%= flash[:notice]%></p>
+  <% end %>
+    
+  </div>
 
-<ul class="nav nav-tabs">
-  <li><%= link_to "Home", welcome_index_path %></li>
-  <li><%= link_to "New Interest", new_interest_path %></li>
-  <li><%= link_to "New Event", new_event_path %></li>
-  <li><%= link_to "Events", events_path %></li>
-</ul>
-  
-<% if flash[:notice] %>
-  <p class="notices"><%= flash[:notice]%></p>
-<% end %>
-  
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>

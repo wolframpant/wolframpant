@@ -34,7 +34,7 @@ class ImagesController < ApplicationController
   private
   
   def image_params
-    params.require(:image).permit(:name, :location, :event_id)
+    params.require(:image).permit(:name, :location, :event_id, :prime)
   end
       
 end

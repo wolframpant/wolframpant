@@ -1,7 +1,16 @@
 .container
   .row
+    .col-md-8
+      %h3 Related Highlights
+      - @evints.each do |e|
+        = link_to e.evint_event.name, e.evint_event
+        = e.id
+        - if current_user 
+          = link_to "Delete",  {:id => e.id, :controller => "evints", :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete evint #{e.id}?'}
+        %br
+        
     .col-md-4
-      %h1= @interest.name
+      %h2= @interest.name
       %p= @interest.description
       %br
       - if current_user
@@ -12,12 +21,5 @@
           = f.hidden_field :interest_id, :value => @interest.id
           = f.submit 'Save'
         
-    .col-md-8
-      %h1 Related Highlights
-      - @evints.each do |e|
-        = link_to e.evint_event.name, e.evint_event
-        - if current_user 
-          = link_to "Delete",  {:id => e.id, :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete this evint?'}
-        %br
      
     
