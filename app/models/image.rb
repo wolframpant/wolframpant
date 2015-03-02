@@ -8,8 +8,4 @@ class Image < ActiveRecord::Base
     :prime == true
   end
   
-  def resume
-    :name => "Resume"
-  end
-  
 end

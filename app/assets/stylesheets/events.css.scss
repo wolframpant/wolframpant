@@ -1,0 +1,11 @@
+/* roughly 5 images will fit into width of window */
+.eventimg {
+  float: left;
+  width: 20%;
+  padding-top: 15px;
+}
+
+/* leave some space on each side of each image within .eventimg div */
+.eventimg img {
+  width: 90%;
+}

@@ -1,12 +1,12 @@
 .container
   
   .event
-    %h1= @event.name
+    %h2= @event.name
     %p= @event.description
      
   .images
     - if current_user
-      %h1 Add Image for #{@event.name}
+      %h3 Add Image for #{@event.name}
       = form_for @image do |f|
         = f.label :name
         = f.text_field :name, :size => 50

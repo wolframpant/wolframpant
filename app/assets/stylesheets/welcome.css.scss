@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.fadeInStraight {
+  -webkit-animation: fadeInStraight 6s; /*Chrome, Safari, Opera */
+  animation: fadeInStraight 6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInStraight {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeInStraight {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .slideUp, .slideRight, .fadInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
   width: 32%;
   height: 49%;
@@ -120,13 +137,13 @@
 
 .fromCorner {
     -webkit-animation: fromCorner 2s; /* Chrome, Safari, Opera */
-    animation: fadeInLeft 2s;
+    animation: fromCorner 2s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fromCorner {
-    from {-webkit-transform: rotate(0) translateX(-500%) translateY(-500%);
-          -moz-transform: rotate(0) translateX(-500%) translateY(-500%);      
-          transform: rotate(0) translateX(-500%) translateY(-500%)}
+    from {-webkit-transform: translateX(-500%) translateY(-500%);
+          -moz-transform: translateX(-500%) translateY(-500%);      
+          transform: translateX(-500%) translateY(-500%)}
     to {-webkit-transform: translateY(-8deg);
         -moz-transform: translateY(-8deg);
         transform: translateY(-8deg)}
@@ -134,9 +151,9 @@
 
 /* Standard syntax */
 @keyframes fromCorner {
-    from {-webkit-transform: rotate(0) translateX(-500%) translateY(-500%);
-          -moz-transform: rotate(0) translateX(-500%) translateY(-500%);      
-          transform: rotate(0) translateX(-500%) translateY(-500%)}
+    from {-webkit-transform: translateX(-500%) translateY(-500%);
+          -moz-transform: translateX(-500%) translateY(-500%);      
+          transform: translateX(-500%) translateY(-500%)}
     to {-webkit-transform: translateY(-8deg);
         -moz-transform: translateY(-8deg);
         transform: translateY(-8deg)}
@@ -236,10 +253,4 @@
   -webkit-transform: rotate(5deg) translateX(20%);
   -moz-transform: rotate(5deg) translateX(20%);
   transform: rotate(5deg) translateX(20%)
-}
-
-@media only screen and (max-width: 320px) {
-
-   body { font-size: 2em; }
-
 }
