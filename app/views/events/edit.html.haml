@@ -27,6 +27,6 @@
   = f.label 'not prime'
   = f.radio_button(:prime, false)
   %br
-  = f.hidden_field :event_id, value => @event.id
+  = f.hidden_field :event_id, :value => @event.id
   = f.submit "Submit"
   

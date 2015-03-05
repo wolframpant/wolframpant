@@ -73,6 +73,26 @@ Interest.create!(
 Interest.create!(
   name: "Creative Pursuits",
   description: "This is an awfully vague title, but it applies in my case to theatre, puppetry, music, and to an appreciation of the performing arts in all their forms.")
+ 
+interests = Interest.all
+
+Project.create!(
+  name: "Bloccitoff",
+  url: "https://hidden-brushlands-2390.herokuapp.com/")
+
+Project.create!(
+  name: "Blocipedia",
+  url: "http://ellen-blocipedia.herokuapp.com/")
+
+Project.create!(
+  name: "Bloccit",
+  url: "http://ellen-bloccit.herokuapp.com/")
+
+Project.create!(
+  name: "Ellen's Theatre Community",
+  url: "https://ellens-theatre-community.herokuapp.com/")
+
+projects=Project.all
 
 User.create!(
   email: "llnwlfsn@gmail.com",
@@ -81,4 +101,7 @@ User.create!(
   confirmed_at: Time.now
 )
 
-
+puts "seed completed"
+puts "#{events.count} events created"
+puts "#{interests.count} interests created"
+puts "#{projects.count} projects created"

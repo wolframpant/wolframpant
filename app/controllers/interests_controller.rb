@@ -20,7 +20,6 @@ class InterestsController < ApplicationController
   def edit
     @interest = Interest.find(params[:id])
     authorize @interest
-    
   end
   
   def update

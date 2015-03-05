@@ -1,0 +1,26 @@
+.container
+  %h1 Edit Project #{@project.name}
+
+  %p= link_to "Back to Projects", projects_path
+
+  = form_for @project do |f|
+    = f.label :name
+    = f.text_field :name, size: 50
+    %br
+    %br
+    = f.label :url
+    %br
+    = f.text_field :url, size: 50
+    %br
+    %br
+    = f.submit "Submit"
+  %br
+  %h3 Add Image
+  = form_for @projectimage, :html => {:multipart => true} do |f|
+    = f.label "Name (optional)"
+    = f.text_field :name, size: 50
+    %br
+    = f.file_field :location
+    %br
+    = f.hidden_field :project_id, :value => @project.id
+    = f.submit "Submit"

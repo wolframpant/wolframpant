@@ -31,10 +31,14 @@ class EvintsController < ApplicationController
       redirect_to :back
     end
   end
+
+  def index
+    @evints = Evint.all
+  end
   
   private
   
   def evints_params
-    params.require(:evint).permit(:event_id, :interest_id)
+    params.require(:evint).permit(:event_id, :interest_id, :id)
   end
 end

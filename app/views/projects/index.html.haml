@@ -1,0 +1,27 @@
+.container
+
+  %h2 Portfolio
+  %small click on image to see larger version
+  - if current_user
+    = link_to "Add Project", new_project_path
+    %br
+    %br
+  - @projects.each do |p|
+    .project
+      = link_to p.name, p.url, :target => "_blank"
+      - # Only the developer should have a sign-in; current_user will then refer to the developer
+      - if current_user
+        = link_to "Edit", edit_project_path(id:p.id)
+    %br
+    - if p.projectimages.exists?
+      - # container for all of a project's images
+      .projectimg
+        - p.projectimages.each do |i|
+          - # container for each image
+          .projectimage
+            = link_to image_tag(i.location.full.url), projectimage_path(:id => i.id)
+            %p= i.name
+            - # Only the developer should have a sign-in; current_user will then refer to the developer
+            - if current_user
+              = link_to "Delete", {:id => i.id, :controller => 'projectimages', :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete #{i.name}?'}
+
