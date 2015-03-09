@@ -11,7 +11,7 @@ Event.create!(
 
 Event.create!(
   name: "Physical Anthropology",
-  description: "I discovered Physical Anthropology the second semester of my freshman year at Yale. I had always thought of myself as a scientist, but one who both loved and mistrusted the manifestations of human culture. Here was a way to approach understanding the human race from a scientific perspective, taking into account how the forces of nature, evolution, and biology have determined who we are.  My dissertation examined the role of biology in determining elements of human culture."
+  description: "I discovered Physical Anthropology the second semester of my freshman year at Yale. I had always thought of myself as a scientist, but one who both loved and mistrusted the manifestations of human culture. Here was a way to approach understanding the human race from a scientific perspective, taking into account how the forces of nature, evolution, and biology have determined who we are.  My dissertation examined the role of biology in determining elements of human culture. MACCHU PICCHU"
 )
 
 Event.create!(
@@ -40,11 +40,37 @@ Event.create!(
 
 Event.create!(
   name: "'The Knight of the Burning Pestle'",
-  description: "--")
+  description: "The Knight of the Burning Pestle' is a comedy, written in 1604. It features a group of players, here to present a play about a merchant. Well, in the middle of the troupe's prologue, two members of the audience jump up and begin to complain. They don't want to see a play about a merchant--they'd rather see one about a knight in shining armor. The players politely point out that they already have a play prepared, and they have no one left over to play a knight. So, the merchants call up their apprentice. He can play the knight, they insist! Now we have onstage the acting troupe; the 'audience members;' and the apprentice. The play about the merchant goes on, and every one in a while the audience members jump in and demand a scene about their knight. The troupe joins in with the apprentice to create a second, interweaving play. I directed 'Knight' in a black box theatre at the University of Colorado. I had a talented and creative cast, and we were certainly all stretched by this challenge! With full staging and a lot of money, I'd have done something completely different; in these circumstances, I was challenged to created three levels of reality/pretense onstage at once with only the physicality of my actors.")
 
 Event.create!(
   name: "Bennington Marionettes",
   description: "--")
+
+Event.create!(
+  name: "Directors' Workshop, Spoleto, Italy"
+  description: "La Mama")
+
+Event.create!(
+  name: "Kulm, North Dakota"
+  description: "barbed wire fences; ATV's; 500 people, 5 churches; hunting culture; interiority; Fish and Wildlife")
+
+Event.create!(
+  name: "Bread and Puppet"
+  description: "People came up to tell us how wonderful our show was. Our response was generally, 'So glad you liked it! What was it about?")
+
+Event.create!(
+  name: "Camping"
+  description: "--")
+
+Event.create!(
+  name: "Hiking"
+  description: "All weathers and seasons")
+
+Event.create!(
+  name: "Music"
+  description: "Singing, Piano, Guitar, Trumpet, composition in college")
+
+
 
 events = Event.all
 
@@ -55,24 +81,24 @@ Interest.create!(
 
 Interest.create!(
   name: "Back to Nature",
-  description: "I've alwas=ys loved being as close to the natural world as possible, both physically and intellectually."
+  description: "I've always loved being as close to the natural world as possible, both physically and intellectually. I love camping and hiking, both in the summer and in the winter. In fact, I just finally purchased my first pair of snowshoes, which allows me to go out into the wintry woods on a whim without having to plan and rent equipment first! I just love being out there, where people are few, civilization is far behind, and the world rises to greet you. In my various studies, I've approached the relationship between humans and the world around us from an intellectual perspective. Physical anthropology, the study of human evolution, not only involved research on living primates to better understand protohominids, but uses evolutionary theory to hypothesize on how interact with the natural world has impacted human development. And my chief goal for becoming a veterinarian was to serve on the front lines of the relationship between humans and other animals . . . too bad that Western medicine focusses so much on disease rather than health. I was fascinated by the comparative biology, but lost interest when the conversation turned to disease processes."
 )
 
 Interest.create!(
   name: "Logic and Puzzles",
-  description: "Woo-hoo!")
+  description: "This theme could really be combined with the 'Science' theme. Chemistry excited me because it seemed to approach the world as a puzzle. Putting the pieces together felt like a way to fundamentally understand the ways in which the world around me works. My love of math, which I followed up to multivariate calculus in my first semester of college, also belongs to this theme. I do the New York Time crossword puzzle every day; but in computer coding, I've found an active, useful, and creative way to indulge my love of working out puzzles and thinking logically about algorithms.")
 
 Interest.create!(
   name: "Different Places and Cultures",
-  description: "I was going to call this section Travel, but then I realized travel isn't the only way to expose oneself to new cultures.")
+  description: "I was going to call this section 'Travel,' but then I realized travel isn't the only way I expose myself to new cultures. My favorite way to travel is to go somewhere new and to engage in something, to do something there. Examples would be my Save the Children work in Nepal; my work as a chambermaid in Castletownshend, Ireland; my study of Jewish traditional tests in Jerusalem, and my research on medieval tournaments in London. I've also moved to new locations in the US several times, to San Francisco from Boston, to Boulder from San Francisco, to Denver from Boulder. The energy in the streets varies so from city to city, from neighborhood to neighborhood, and I simply love to experience that. Interestingly, I found North Dakota in some ways more foreign to me than many of the farther places I've been. People's internal processes seemed different from mine in a profound way.")
 
 Interest.create!(
   name: "Analytic Thinking",
-  description: "I've applied close examination and questioning of phenomena to the natural world and humanity through science, to ancient Jewish traditions through close text analysis, and to theatre through literary criticism theory.")
+  description: "I've applied close examination and questioning of phenomena to the natural world and humanity through science, to ancient Jewish traditions through close text analysis, and to theatre through literary criticism theory. Now I apply some of the same skills to coding problems.")
 
 Interest.create!(
   name: "Creative Pursuits",
-  description: "This is an awfully vague title, but it applies in my case to theatre, puppetry, music, and to an appreciation of the performing arts in all their forms.")
+  description: "When I was three years old, I 'twirled' a baton in a parade. In that moment I knew that performance, that the gathering of people to watch or to hear other people share their talents, was something special. Dancing lessons, piano lessons, gymnastics and ice skating followed. I played the lead in all of my elementary school plays, because the teachers trusted me to memorize my lines, but I discovered at the same age that I didn't have a natural gift for singing. By the time junior high school arrived, and I had to audition for plays, I came to the realization that I also did not have a natural gift of expression. I was disappointed, but not for long--I decided that I wanted to be involved in the process of creating performance, so I invented the concept of stage crew at my camp and at my high school. I built and painted sets, found and created props, and came up with any excuse I could to be present and useful at rehearsals and performances. I also joined my high school's Concert Choir, and--don't ask me how--taught myself to sing on key! By college, I was a stage manager and a director. I took an intensive acting class at the Yale Drama School one summer, and discovered again that performing was not my greatest strength. Sigh. But in my thirties, I joined a marionette troupe. With a puppet in my hands, I became the performer I'd always wanted to be.")
  
 interests = Interest.all
 
