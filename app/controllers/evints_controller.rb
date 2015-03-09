@@ -22,6 +22,7 @@ class EvintsController < ApplicationController
    def destroy
      @evint = Evint.find_by(params[:id])
      authorize @evint
+     @evint.destroy
     
      if @evint.destroy
        flash[:notice] = "Your evint has been removed."
@@ -31,11 +32,14 @@ class EvintsController < ApplicationController
       redirect_to :back
     end
   end
+  
+  def show
+  end
 
   def index
     @evints = Evint.all
   end
-  
+     
   private
   
   def evints_params

@@ -3,11 +3,12 @@
     .col-md-8
       %h3 Related Highlights
       - @evints.each do |e|
-        = link_to e.evint_event.name, e.evint_event
-        = e.id
-        - if current_user 
-          = link_to "Delete",  {:id => e.id, :controller => "evints", :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete evint #{e.id}?'}
-        %br
+        .eventimg
+          = link_to e.evint_event.name, e.evint_event
+          = image_tag(e.evint_event.images.find_by(:prime => true).location.thumb.url)
+          - if current_user 
+            = link_to "Delete", evint_path(e), :method => :delete, :confirm => 'Are you sure?'
+        
         
     .col-md-4
       %h2= @interest.name
