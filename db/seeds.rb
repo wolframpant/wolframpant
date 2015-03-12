@@ -11,7 +11,7 @@ Event.create!(
 
 Event.create!(
   name: "Physical Anthropology",
-  description: "I discovered Physical Anthropology the second semester of my freshman year at Yale. I had always thought of myself as a scientist, but one who both loved and mistrusted the manifestations of human culture. Here was a way to approach understanding the human race from a scientific perspective, taking into account how the forces of nature, evolution, and biology have determined who we are.  My dissertation examined the role of biology in determining elements of human culture. MACCHU PICCHU"
+  description: "I discovered Physical Anthropology in the second semester of my freshman year at Yale. I had always thought of myself as a scientist, but one who both loved and mistrusted the manifestations of human culture. Here was a way to approach understanding the human race from a scientific perspective, taking into account how the forces of nature, evolution, and biology have determined who we are.  I took a graduate osteology seminar in my junior year, and had the opportunity to work with bones from the original discovery of Macchu Picchu in Peru! The bones are now back in Peru, as is appropriate; I'd really love to go there and see the context for my early work. My dissertation examined the role of biology in determining elements of human culture."
 )
 
 Event.create!(
@@ -47,30 +47,28 @@ Event.create!(
   description: "--")
 
 Event.create!(
-  name: "Directors' Workshop, Spoleto, Italy"
+  name: "Directors' Workshop, Spoleto, Italy",
   description: "La Mama")
 
 Event.create!(
-  name: "Kulm, North Dakota"
+  name: "Kulm, North Dakota",
   description: "barbed wire fences; ATV's; 500 people, 5 churches; hunting culture; interiority; Fish and Wildlife")
 
 Event.create!(
-  name: "Bread and Puppet"
+  name: "Bread and Puppet",
   description: "People came up to tell us how wonderful our show was. Our response was generally, 'So glad you liked it! What was it about?")
 
 Event.create!(
-  name: "Camping"
+  name: "Camping",
   description: "--")
 
 Event.create!(
-  name: "Hiking"
+  name: "Hiking",
   description: "All weathers and seasons")
 
 Event.create!(
-  name: "Music"
+  name: "Music",
   description: "Singing, Piano, Guitar, Trumpet, composition in college")
-
-
 
 events = Event.all
 
