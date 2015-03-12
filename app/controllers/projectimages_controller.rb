@@ -21,6 +21,17 @@ class ProjectimagesController < ApplicationController
     @proect = Project.find_by(id: @projectimage.project_id )
   end
   
+   def destroy
+     @projectimage = Projectimage.find(params[:id])
+     if @projectimage.destroy
+       flash[:notice] = "You have deleted an image"
+       redirect_to :back
+     else
+       flash[:notice] = "Please try again"
+       redirect_to :back
+     end
+   end
+  
   private
     
     def projectimage_params

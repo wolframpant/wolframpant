@@ -4,6 +4,7 @@
   <title>Wolframpant</title>
   <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Federo|Fredericka+the+Great' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <li><%= link_to "PORTFOLIO", projects_path %></li>
     <li><%= link_to "LINKEDIN PROFILE", "https://www.linkedin.com/in/wolframpant", :target => "_blank" %></li>
     <li><%= link_to "GITHUB PROFILE", "https://www.github.com/wolframpant", :target => "_blank" %></li>
-  </ul>
+
     <% if current_user %>
     <div class = "pull right">
     <%= link_to destroy_user_session_path, method: :delete, class: 'btn btn-primary btn-sm' do %>
@@ -23,7 +24,8 @@
     <% end %>
     </div>
     <% end %>
-  
+  </ul>
+     
   <% if flash[:notice] %>
     <p class="notices"><%= flash[:notice]%></p>
   <% end %>

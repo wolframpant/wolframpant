@@ -1,7 +1,7 @@
 class Evint < ActiveRecord::Base
   
-  belongs_to :events
-  belongs_to :interests
+  belongs_to :event
+  belongs_to :interest
   
   def evint_event
     Event.find_by(:id => self.event_id)

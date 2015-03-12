@@ -22,8 +22,7 @@ class EvintsController < ApplicationController
    def destroy
      @evint = Evint.find_by(params[:id])
      authorize @evint
-     @evint.destroy
-    
+         
      if @evint.destroy
        flash[:notice] = "Your evint has been removed."
        redirect_to :back
