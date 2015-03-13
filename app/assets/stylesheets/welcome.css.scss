@@ -6,9 +6,8 @@
   -webkit-transform: translateY(-25px);
   -moz-transform: translateY(-25px);
   transform: translateY(-25px);
-  color: white;
-  background-color: black;
-  opacity: .5;
+  background-color: white;
+  opacity: .7;
   width: 90%;
   text-align: center;
   margin: 0 auto 0 auto;
@@ -35,15 +34,13 @@
   width: 32%;
   height: 49%;
   float: right;
-  border-style: groove;
   background-color: white;
-  padding: 10px;
-  border-color: #F200FF;
   text-align: center;
+  color: black;
 }
 
 .intimg img {
-  width: 90%;
+  width: 100%;
   height: auto;  
 }
 
@@ -51,6 +48,8 @@
   -webkit-transform: scale(1.2);
   -moz-transform: scale (1.2);
   transform: scale(1.2);
+  color: #F200FF;
+  font-weight: bold;
 }
 
 .slideUp {

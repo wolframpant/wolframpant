@@ -19,17 +19,22 @@
   transform: scale(1.2);
 }
 
+.inteventimg:hover a {
+  color: #F200FF;
+}
+
 .high {
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   transform: translateY(50px);
-  background-color: black;
+  background-color: white;
   opacity: .5;
   width: 100%;
   text-align: center;
   margin: 0 auto 0 auto;
+  z-index: 999;
 }
 
 .high a {
-  color: white;
+  color: black;
 }
