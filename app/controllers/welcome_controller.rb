@@ -12,7 +12,9 @@ class WelcomeController < ApplicationController
   end
   
   def about
-    
+    @images=Image.all
+    @projimgs=Projectimage.all
+    @intimgs=Interest.all.photos
   end
   
   def readpdf

@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
+gem 'modernizr-rails', '~>2.7.1'
+
 gem 'haml-rails'
 
 gem 'bootstrap-sass', '~> 3.2.0.2'

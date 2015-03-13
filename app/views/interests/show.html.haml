@@ -3,15 +3,17 @@
     .col-md-8
       %h3 Related Highlights
       - @evints.each do |e|
-        .inteventimg
-          = link_to e.evint_event.name, e.evint_event
-          %br
-          - if e.evint_event.images.exists?
-            = image_tag(e.evint_event.images.find_by(:prime => true).location.full.url)
-          %br
-          - if current_user 
-            = link_to "Delete", evint_path(e), :method => :delete, data: {:confirm => 'Are you sure?'}
-        
+        .grayscale
+          .inteventimg
+            .high
+              = link_to e.event.name, e.event
+            %br
+            - if e.event.images.exists?
+              = link_to image_tag(e.event.images.find_by(:prime => true).location.full.url), e.event
+            %br
+            - if current_user 
+              = link_to "Delete #{e.id}", e, :method => :delete, data: {:confirm => 'Are you sure?'}
+
     .col-md-4
       %h2= @interest.name
       %p= @interest.description

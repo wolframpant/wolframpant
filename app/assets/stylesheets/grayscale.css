@@ -1,0 +1,17 @@
+/*
+Version: 1.0
+Author: Nauris Kolāts | Streamline
+Author URI: http://www.majas-lapu-izstrade.lv
+*/
+
+.grayscale img {
+	filter: gray; /* IE6-9 */
+  filter: grayscale(1);
+	-webkit-filter: grayscale(100%); /* Webkit Nightlies & Google Chrome Canary */
+	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+.grayscale img:hover {
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+}

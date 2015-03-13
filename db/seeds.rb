@@ -5,7 +5,7 @@ Event.create!(
 )
 
 Event.create!(
-  name: "Rocky Mountain Biological Lab",
+  name: "Rocky Mtn Biological Lab",
   description: "I spent a summer living in a log cabin in the middle of the Rockies, studying Field Ecology and doing statistics by hand. I'm pretty sure I was the only one in my class who loved the statistics bit . . . on weekends we went hiking and camping. Living so close to the wilderness of the mountains was a privilege that I will always remember."
 )
 
@@ -59,16 +59,28 @@ Event.create!(
   description: "People came up to tell us how wonderful our show was. Our response was generally, 'So glad you liked it! What was it about?")
 
 Event.create!(
-  name: "Camping",
+  name: "Camping/Hiking",
   description: "--")
 
 Event.create!(
-  name: "Hiking",
-  description: "All weathers and seasons")
+  name: "YouthBuild USA",
+  description: "Relational Databases")
 
 Event.create!(
   name: "Music",
   description: "Singing, Piano, Guitar, Trumpet, composition in college")
+
+Event.create!(
+  name:"Lighting Design",
+  description: "--")
+
+Event.create!(
+  name: "Directing",
+  description: "College, Burning Man, Grad School")
+
+Event.create!(
+  name: "Academic Theatre",
+  description: "College, MA degree, ABD")
 
 events = Event.all
 

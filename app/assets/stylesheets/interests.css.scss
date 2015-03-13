@@ -4,4 +4,32 @@
 
 .inteventimg {
   float: left;
+  width: 33%;
+  height: 200px;
+}
+
+.inteventimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.inteventimg:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.high {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  transform: translateY(50px);
+  background-color: black;
+  opacity: .5;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.high a {
+  color: white;
 }

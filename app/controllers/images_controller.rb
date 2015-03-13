@@ -20,11 +20,10 @@ class ImagesController < ApplicationController
   
   def destroy
     @image = Image.find(params[:id])
-    @event = Image.event
     authorize @image
     if @image.destroy
       flash[:notice] = "You have deleted an image"
-      redirect_to @event
+      redirect_to :back
     else
       flash[:notice] = "Please try again"
       redirect_to :back

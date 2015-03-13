@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.low {
+  -webkit-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  transform: translateY(-25px);
+  color: white;
+  background-color: black;
+  opacity: .5;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
 .fadeInStraight {
   -webkit-animation: fadeInStraight 6s; /*Chrome, Safari, Opera */
   animation: fadeInStraight 6s;
