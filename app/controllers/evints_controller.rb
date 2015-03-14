@@ -20,7 +20,7 @@ class EvintsController < ApplicationController
   end
   
   def destroy
-     @evint = Evint.find_by(params[:id])
+     @evint = Evint.find(params[:id])
      authorize @evint
          
     if @evint.destroy

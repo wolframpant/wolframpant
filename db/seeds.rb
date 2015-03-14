@@ -6,7 +6,7 @@ Event.create!(
 
 Event.create!(
   name: "Rocky Mtn Biological Lab",
-  description: "I spent a summer living in a log cabin in the middle of the Rockies, studying Field Ecology and doing statistics by hand. I'm pretty sure I was the only one in my class who loved the statistics bit . . . on weekends we went hiking and camping. Living so close to the wilderness of the mountains was a privilege that I will always remember."
+  description: "Gothic, CO is an old ghost town, purchased in the early 1900's and converted to a biological field station. I spent a summer during college there, living in a log cabin in the middle of the Rockies, studying Field Ecology and doing statistics by hand. I'm pretty sure I was the only one in my class who loved the statistics bit! On weekends we went hiking and camping. Living so close to the wilderness of the mountains was a privilege that I will always remember."
 )
 
 Event.create!(
@@ -20,7 +20,7 @@ Event.create!(
 
 Event.create!(
   name: "Pardes Institute for Jewish Studies",
-  description: "In the year immediately after college, I went to Jerusalem to study at a unique institution. At the time, Pardes was one of very few places in the world where men and women could study traditional Jewish texts, in the traditional manner, together. It was here that I learned many things a Western education had failed to instill in me: the ability to actively engage with a text, to challenge it, to take it into my heart. Living in Jerusalem was a challenge, of course, there is always a sense of danger there and an underlying tension, but it was also beautiful. When life cannot be taken for granted, each moment becomes precious.")
+  description: "In the year immediately after college, I went to Jerusalem to study at a unique institution. At the time, Pardes was one of very few places in the world where men and women could study traditional Jewish texts, in the traditional manner, together. It was here that I learned many things a Western education had failed to instill in me: the ability to actively engage with a text, to challenge it, to take it into my heart. Living in Jerusalem was a challenge, of course--there is always a sense of danger there and an underlying tension--but it was also beautiful, a truly passionate place to live. When life cannot be taken for granted, each moment becomes precious.")
 
 Event.create!(
   name: "Nepal",
@@ -40,58 +40,58 @@ Event.create!(
 
 Event.create!(
   name: "'The Knight of the Burning Pestle'",
-  description: "The Knight of the Burning Pestle' is a comedy, written in 1604. It features a group of players, here to present a play about a merchant. Well, in the middle of the troupe's prologue, two members of the audience jump up and begin to complain. They don't want to see a play about a merchant--they'd rather see one about a knight in shining armor. The players politely point out that they already have a play prepared, and they have no one left over to play a knight. So, the merchants call up their apprentice. He can play the knight, they insist! Now we have onstage the acting troupe; the 'audience members;' and the apprentice. The play about the merchant goes on, and every one in a while the audience members jump in and demand a scene about their knight. The troupe joins in with the apprentice to create a second, interweaving play. I directed 'Knight' in a black box theatre at the University of Colorado. I had a talented and creative cast, and we were certainly all stretched by this challenge! With full staging and a lot of money, I'd have done something completely different; in these circumstances, I was challenged to created three levels of reality/pretense onstage at once with only the physicality of my actors.")
+  description: "The Knight of the Burning Pestle' is a comedy, written in 1604. It features a group of players, here to present a play about a merchant. Well, in the middle of the troupe's prologue, two members of the audience jump up and begin to complain. They don't want to see a play about a merchant--they'd rather see one about a knight in shining armor. The players politely point out that they already have a play prepared, and they have no one left over to play a knight. So, the merchants call up their apprentice. He can play the knight, they insist! Now we have onstage the acting troupe; the 'audience members;' and the apprentice. The play about the merchant goes on, and every one in a while the audience members jump in and demand a scene about their knight. The troupe joins in with the apprentice to create a second, interweaving play. I directed 'Knight' in a black box theatre at the University of Colorado. I had a talented and creative cast, and we were certainly all stretched by this challenge! With full staging and a lot of money, I'd have done something completely different; in these circumstances, I was challenged to created three levels of reality/pretense onstage at once with only the physicality of my actors. **Unfortunately, I don't have pictures of the show! These are images from my imagination of a fully-funded production.")
 
 Event.create!(
   name: "Bennington Marionettes",
-  description: "--")
+  description: "I found a flyer advertising this marionette troupe, and called to see if I might sit in on a rehearsal. Well, it turned out they were looking for puppeteers. So, I trained to manipulate with these beautiful puppets, and traveled around the Northeast for a year performing puppet shows based on operasn such as Hanzel and Gretel and The Ring Cycle.")
 
 Event.create!(
   name: "Directors' Workshop, Spoleto, Italy",
-  description: "La Mama")
+  description: "The La Mama theatre company is located in New York, where they produce cutting-edge theatrical experiences. They also have a beautiful 500-year old monastery in Spoleto, Umbria, Italy. Every summer they run a workshop for directors to teach techniques for making radical theatre. It was a splendid place to spend a month, creating theatrical moments based on architecture or a piece of clothing and characters out of half-remembered songs.")
 
 Event.create!(
   name: "Kulm, North Dakota",
-  description: "barbed wire fences; ATV's; 500 people, 5 churches; hunting culture; interiority; Fish and Wildlife")
+  description: "I loved studying Physical Anthropology in college, but after school I sought a more practical outlet for my interest in the relationship between humans and the natural world. I thought perhaps I'd be a wildlife biologist. So I went to Kulm,North Dakota to work with the Fish and Wildlife people there, protecting endangered ducks. There's a fair amount of watching from a distance involved in wildlife biology, but here there were opportunities to do practical things, such as building fences and learning to fight forest fires.")
 
 Event.create!(
   name: "Bread and Puppet",
-  description: "People came up to tell us how wonderful our show was. Our response was generally, 'So glad you liked it! What was it about?")
+  description: "While I was working as a puppeteer, I found a group of people who were preparing a side show for Bread and Puppet's annual festival. Our director had created several very large cardboard shapes, and we created a show based on the movement and shifting of those shapes. When people came up to tell us how wonderful our show was, our response was generally, 'So glad you liked it! What was it about?' I'm not sure anyone ever had a clear idea of the meaning of the show, but it was beautiful to watch. I also had the opportunity while there to work with a Czeck puppeteer, whose work involved reflections and fire and water. Very ethereal!")
 
 Event.create!(
   name: "Camping/Hiking",
-  description: "--")
+  description: "I've always loved being out in the wilderness. As a child I discovered that while hiking or camping, I felt more open to the possibilities of life==and I've never lost that feeling. As an adult, I've been fortunate to have one particular friend, also named Ellen, who's been my camping buddy. We've camped in the Colorado Rockies, the Shenandoah Mountains, and in Baja, California, among many other places. I particularly love winter hiking. The variety of conditions and terrain one has to have the skill and experience to cross is simply fascinating.")
 
 Event.create!(
   name: "YouthBuild USA",
-  description: "Relational Databases")
+  description: "I began to work for YouthBuild when I was eking out a living as a puppeteer. Fortunately, I became friends with the IT director there, and he took me under his wing. By the time I was ready to move on from travelling with the marionette troupe, I was designing and building relational databases (using Microsoft Access) and conducting training sessions for the YouthBuild staff on how to get along with their computers.")
 
 Event.create!(
   name: "Music",
-  description: "Singing, Piano, Guitar, Trumpet, composition in college")
+  description: "I've always loved music. I realized as a child that I didn't have a great ear, and couldn't quite carry a tune; but I fixed that in high school. I joined the concert choir there, and taught myself to sing! I wish I could articulate now how I managed that, but it did happen. It is, of course, also key to any theatrical enterprise. in 'The Knight of the Burning Pestle', for example, there was a character who sang more than he spoke. The original text of the play didn't include a musical score, or even all of the words to the songs he sang--they were popular songs of the time, and an actor was expected to be familiar with them. With a bit of research, I was able to find most of the original songs, with music. My actor had quite a job to learn all of them, but he did beautifully. I've played the piano, the guitar, and the trumpet, but singing is probably my favority musical outlet. Oh, and of course, when it came time to try and develop an appreciation of Japanese Noh theatre, my approach was to do a musical analysis of a traditional play. The work was very challenging, as in Noh music is defined quite differently than it is in most Western traditions, but it was also fascinating.")
 
 Event.create!(
   name:"Lighting Design",
-  description: "--")
+  description: "I had such fun learning the basics of lighting design in graduate school! We had a weekly black box production, and I designed a number of shows. This is a wonderful way to combine a technical sensibility with a creative urge. My design for 'Madame Butterfly' involved over two hundred lighting instruments, and engaged the metaphor of the lightness and delicacy of a butterfly. I also had the opportunity to design a few dance performances, which are a particular treat--no need for a realistic sensibility.")
 
 Event.create!(
   name: "Directing",
-  description: "College, Burning Man, Grad School")
+  description: "I directed my first play in my sophomore year at Yale. It was a student-written play, we had three weeks from audition to performance, and it was quite the trial by fire! Since then I've directed in San Francisco, in Boulder, and at Burning Man. My most recent show was in Colorado, a surrealistic Japanese comedy called 'The Man Who Turned Into a Stick.'")
 
 Event.create!(
   name: "Academic Theatre",
-  description: "College, MA degree, ABD")
+  description: "I took theatre courses at Yale, of course, including several at the Yale Drama School. After graduating, aside from a year or two of puppetry, I had an idea that I should focus on interests that might be more remunerative. So It was a number of years before I gave in and decided to study this field in a serious way. I very much enjoyed analyzing and critiquing play texts and performances, and playing with ideas. In addition to my research on medieval and early Renaissance Tournaments, I was particularly drawn to Shakespeare's tragedies: to the mysterious inclusion of witches in Macbeth, to the onstage storm and insanity in King Lear.")
 
 events = Event.all
 
 Interest.create!(
   name: "Science",
-  description: "I have loved science in general and most fields of science in particular since I was a child. In high school I discovered chemistry--what a beautiful pursuit! The piecing together of the puzzle of how the world works. In college, Freshman Organic Chemistry led me to learn the intricacies of Quantum Mechanics. Then, of course, I discovered Physical Anthropology, which led to wildlife biology and eventually to veterinary school in my desire to participate in the relationship between people and the world around us."
+  description: "I have loved science in general and most fields of science in particular since I was a child. In high school I discovered chemistry--what a beautiful pursuit! The piecing together of the puzzle of how the world works. In college, Freshman Organic Chemistry led me to learn the intricacies of Quantum Mechanics. Then, of course, I discovered Physical Anthropology, which led to wildlife biology and eventually to veterinary school in my desire to participate in the relationship between people and the world around us. When I moved on to the study of theatre, I didn't leave this passion behind--as a dramaturg for a new play based on Mary Shelley's 'Frankenstein,' I had the opportunity to research the development of scientific approaches from alchemy up through Newton."
 )
 
 Interest.create!(
   name: "Back to Nature",
-  description: "I've always loved being as close to the natural world as possible, both physically and intellectually. I love camping and hiking, both in the summer and in the winter. In fact, I just finally purchased my first pair of snowshoes, which allows me to go out into the wintry woods on a whim without having to plan and rent equipment first! I just love being out there, where people are few, civilization is far behind, and the world rises to greet you. In my various studies, I've approached the relationship between humans and the world around us from an intellectual perspective. Physical anthropology, the study of human evolution, not only involved research on living primates to better understand protohominids, but uses evolutionary theory to hypothesize on how interact with the natural world has impacted human development. And my chief goal for becoming a veterinarian was to serve on the front lines of the relationship between humans and other animals . . . too bad that Western medicine focusses so much on disease rather than health. I was fascinated by the comparative biology, but lost interest when the conversation turned to disease processes."
+  description: "I've always loved being as close to the natural world as possible, both physically and intellectually. I love camping and hiking, both in the summer and in the winter. In fact, I just finally purchased my first pair of snowshoes, which allows me to go out into the wintry woods on a whim without having to plan and rent equipment first! I just love being out there, where people are few, civilization is far behind, and the world rises to greet you. In my various studies, I've approached the relationship between humans and the world around us from an intellectual perspective. Physical anthropology, the study of human evolution, not only involves research on living primates to better understand protohominids, but uses evolutionary theory to hypothesize on how interacting with the natural world has impacted human development."
 )
 
 Interest.create!(

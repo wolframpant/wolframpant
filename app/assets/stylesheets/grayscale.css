@@ -12,6 +12,8 @@ Author URI: http://www.majas-lapu-izstrade.lv
 	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
 }
 .grayscale img:hover {
-	filter: none; /* Applies to FF + IE */
-	-webkit-filter: grayscale(0);
+	/* filter: none; /* Applies to FF + IE */
+	/* -webkit-filter: grayscale(0); */
+  filter: saturate(1.5);
+  -webkit-filter: saturate(1.5);
 }
