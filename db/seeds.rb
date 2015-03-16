@@ -16,7 +16,7 @@ Event.create!(
 
 Event.create!(
   name: "Ireland",
-  description: "It was my sophomore year in college, and I was looking for something interesting to do for the summer. My answer? Go to the smallest village I could find in Ireland--oh, the romance-- and find some sort of job. My goal was to experience village life, not to make money, so I quickly found a job as a chambermaid. The village was Castletownshend, population 200, and I worked for the Townshends at the Castle. In the evenings I would go to the village pub, drink a few beers (I never did learn to like the stuff), and sing with my new friends. Everyone had a special song they'd sing when it came their turn. Such a lovely thing!")
+  description: "It was my sophomore year in college, and I was looking for something interesting to do for the summer. I chose to go to the smallest village I could find in Ireland--oh, the romance--and find some sort of job. My goal was to experience village life, not to make money, so I quickly found a job as a chambermaid. The village was Castletownshend, population 200, and I worked for the Townshends at the Castle. In the evenings I would go to the village pub, drink a few beers (I never did learn to like the stuff), and sing with my new friends. Everyone had a special song they'd sing when it came their turn. Such a lovely thing!")
 
 Event.create!(
   name: "Pardes Institute for Jewish Studies",
@@ -76,7 +76,7 @@ Event.create!(
 
 Event.create!(
   name: "Directing",
-  description: "I directed my first play in my sophomore year at Yale. It was a student-written play, we had three weeks from audition to performance, and it was quite the trial by fire! Since then I've directed in San Francisco, in Boulder, and at Burning Man. My most recent show was in Colorado, a surrealistic Japanese comedy called 'The Man Who Turned Into a Stick.' I love working with actors to shape a text into a living, breathing experience.")
+  description: "I directed my first play in my sophomore year at Yale. It was a student-written play, we had three weeks from audition to performance, and it was quite the trial by fire! Since then I've directed in San Francisco, in Boulder, and at Burning Man. My most recent show was in Colorado, a surrealistic Japanese comedy called 'The Man Who Turned Into a Stick.' I love working with actors to shape a text into a living, breathing experience. Actually, I'm finding that the process of physicalizing ideas, making them concrete and beautiful, has many parallels in the process of building elegant code to solve a problem, to take someone's concept and make it real.")
 
 Event.create!(
   name: "Academic Theatre",
@@ -96,11 +96,11 @@ Interest.create!(
 
 Interest.create!(
   name: "Logic and Puzzles",
-  description: "This theme could really be combined with the 'Science' theme. Chemistry excited me because it seemed to approach the world as a puzzle. Putting the pieces together felt like a way to fundamentally understand the ways in which the world around me works. My love of math, which I followed up to multivariate calculus in my first semester of college, also belongs to this theme. I do the New York Time crossword puzzle every day; but in computer coding, I've found an active, useful, and creative way to indulge my love of working out puzzles and thinking logically about algorithms.")
+  description: "This theme could really be combined with the 'Science' theme. Chemistry excited me because it seemed to approach the world as a puzzle. Putting the pieces together felt like a way to fundamentally understand the ways in which the world around me works. My love of math, which I followed up to multivariate calculus in my first semester of college, also belongs to this theme. I do the New York Time crossword puzzle every day. In computer coding, I've found an active, useful, and creative way to indulge my love of working out puzzles and thinking logically about algorithms.")
 
 Interest.create!(
   name: "Different Places and Cultures",
-  description: "I was going to call this section 'Travel,' but then I realized travel isn't the only way I expose myself to new cultures. My favorite way to travel is to go somewhere new and to engage in something, to do something there. Examples would be my Save the Children work in Nepal; my work as a chambermaid in Castletownshend, Ireland; my study of Jewish traditional tests in Jerusalem, and my research on medieval tournaments in London. I've also moved to new locations in the US several times, to San Francisco from Boston, to Boulder from San Francisco, to Denver from Boulder. The energy in the streets varies so from city to city, from neighborhood to neighborhood, and I simply love to experience that. Interestingly, I found North Dakota in some ways more foreign to me than many of the farther places I've been. People's internal processes seemed different from mine in a profound way.")
+  description: "I was going to call this section 'Travel,' but then I realized travel isn't the only way I expose myself to new cultures. My favorite way to travel is to go somewhere new and to engage in something, to do something there. Examples would be my Save the Children work in Nepal; my work as a chambermaid in Castletownshend, Ireland; my study of Jewish traditional tests in Jerusalem, and my research on medieval tournaments in London. I've also moved to new locations in the US several times, to San Francisco from Boston, to Boulder from San Francisco, to Denver from Boulder. The energy in the streets varies so from city to city, from neighborhood to neighborhood, and I simply love to experience that. I believe that my wide experience of exploring new cultures and environments, not to mention new skills, will serve me well in adapting to the new world of working with computers technologies.")
 
 Interest.create!(
   name: "Analytic Thinking",
