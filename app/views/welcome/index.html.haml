@@ -5,38 +5,32 @@
         %h2 Hi there! 
         %p I'm a full stack web developer (I work primarily with Ruby on Rails, HTML, CSS, Javascript, and jQuery). I've loved puzzles and logic since I was a child, and coding for the web allows me to indulge those loves while maintaining a level of creativity that I also value.
         %p While I love coding and web development, even a bit of design, I bring all sorts of other experiences and passions to the table. Here you can find a bit of information and lots of pictures from various places I've been, projects I've been involved with--basically, selected highlights from my work and personal lives.
-        %p <em> The images to the right reflect various passions and themes that have been interwoven in my life and work. Click on an image to see a bit about that theme, and to see highlights that relate to it.</em>
+        %p <em> The images to the right reflect various passions and themes that have been interwoven in my life and work. Click on an image to see a bit about that theme, and to see highlights that relate to it (for computer-related highlights, see "Logic and Puzzles."</em>
 
     .col-xs-8
       .slideUp
         .intimg
-          .grayscale
-            = link_to image_tag(@interest1.photo), @interest1
+          = link_to image_tag(@interest1.photo), @interest1
           %p.low= @interest1.name
       .slideRight
         .intimg
-          .grayscale
-            = link_to image_tag(@interest2.photo), @interest2
+          = link_to image_tag(@interest2.photo), @interest2
           %p.low= @interest2.name
       .rotateFromLeft
         .intimg
-          .grayscale
-            = link_to image_tag( @interest3.photo ), @interest3
+          = link_to image_tag( @interest3.photo ), @interest3
           %p.low= @interest3.name
       .fromCorner
         .intimg
-          .grayscale
-            = link_to image_tag(@interest4.photo), @interest4
+          = link_to image_tag(@interest4.photo), @interest4
           %p.low= @interest4.name
       .rotateInDown
         .intimg
-          .grayscale
-            = link_to image_tag(@interest5.photo), @interest5
+          = link_to image_tag(@interest5.photo), @interest5
           %p.low= @interest5.name
       .fadeIn
         .intimg
-          .grayscale
-            = link_to image_tag(@interest6.photo), @interest6
+          = link_to image_tag(@interest6.photo), @interest6
           %p.low= @interest6.name
       %br
       %br

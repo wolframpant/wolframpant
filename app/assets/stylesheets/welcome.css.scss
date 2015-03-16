@@ -42,13 +42,20 @@
 .intimg img {
   width: 100%;
   height: auto;  
+  filter: brightness(.5);
+  -webkit-filter: brightness(.5);
+}
+
+.intimg img:hover {
+   filter: brightness(1);
+  -webkit-filter: brightness(1);
 }
 
 .slideUp:hover, .slideRight:hover, .fadInLeft:hover, .fromCorner:hover, .rotateFromLeft:hover, .rotateInDown:hover, .fadeIn:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale (1.2);
   transform: scale(1.2);
-  color: #F200FF;
+  color: #cc00cc;
   font-weight: bold;
 }
 

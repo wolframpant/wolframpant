@@ -72,11 +72,11 @@ Event.create!(
 
 Event.create!(
   name:"Lighting Design",
-  description: "I had such fun learning the basics of lighting design in graduate school! We had a weekly black box production, and I designed a number of shows. This is a wonderful way to combine a technical sensibility with a creative urge. My design for 'Madame Butterfly' involved over two hundred lighting instruments, and engaged the metaphor of the lightness and delicacy of a butterfly. I also had the opportunity to design a few dance performances, which are a particular treat--no need for a realistic sensibility.")
+  description: "I had such fun learning to create lighting designs in graduate school! We had a weekly black box production, and I designed a number of shows. This is a wonderful way to combine a technical sensibility with a creative urge. My design for 'Madame Butterfly' involved over two hundred lighting instruments, and engaged the metaphor of the lightness and delicacy of a butterfly. I also had the opportunity to design a few dance performances, which are a particular treat--no need for a realistic sensibility.")
 
 Event.create!(
   name: "Directing",
-  description: "I directed my first play in my sophomore year at Yale. It was a student-written play, we had three weeks from audition to performance, and it was quite the trial by fire! Since then I've directed in San Francisco, in Boulder, and at Burning Man. My most recent show was in Colorado, a surrealistic Japanese comedy called 'The Man Who Turned Into a Stick.'")
+  description: "I directed my first play in my sophomore year at Yale. It was a student-written play, we had three weeks from audition to performance, and it was quite the trial by fire! Since then I've directed in San Francisco, in Boulder, and at Burning Man. My most recent show was in Colorado, a surrealistic Japanese comedy called 'The Man Who Turned Into a Stick.' I love working with actors to shape a text into a living, breathing experience.")
 
 Event.create!(
   name: "Academic Theatre",
