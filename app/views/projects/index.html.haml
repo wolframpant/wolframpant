@@ -9,6 +9,8 @@
   - @projects.each do |p|
     .project
       = link_to p.name, p.url, :target => "_blank"
+      %br
+      = p.description
       - # Only the developer should have a sign-in; current_user will then refer to the developer
       - if current_user
         = link_to "Edit", edit_project_path(id:p.id)

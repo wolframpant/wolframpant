@@ -14,6 +14,9 @@ class ApplicationPolicy
     scope.where(:id => record.id).exists?
   end
 
+  # most policies simply require that a current_user is present. Since I (the developer) am the only registered 
+  # user, in theory this mean that only I may alter the database.
+  
   def create?
     user.present?
   end

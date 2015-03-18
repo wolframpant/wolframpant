@@ -2,15 +2,16 @@
 <html>
 <head>
   <title>Wolframpant</title>
+  <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Federo|Fredericka+the+Great' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container">
   <h1 class="epw">ELLEN P. WOLFSON</h1>
+  <!-- bootstrap classes -->
   <ul class="nav nav-tabs">
     <li><%= link_to "HOME", welcome_index_path %></li>
     <li><%= link_to "RESUME", '/Resume.pdf', :target => '_blank' %></li>

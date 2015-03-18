@@ -10,23 +10,23 @@
     .col-xs-8
       .slideUp
         .intimg
-          = link_to image_tag(@interest1.photo), @interest1
+          = link_to image_tag(@interest1.photo.full.url), @interest1
           %p.low= @interest1.name
       .slideRight
         .intimg
-          = link_to image_tag(@interest2.photo), @interest2
+          = link_to image_tag(@interest2.photo.full.url), @interest2
           %p.low= @interest2.name
       .rotateFromLeft
         .intimg
-          = link_to image_tag( @interest3.photo ), @interest3
+          = link_to image_tag( @interest3.photo.full.url), @interest3
           %p.low= @interest3.name
       .fromCorner
         .intimg
-          = link_to image_tag(@interest4.photo), @interest4
+          = link_to image_tag(@interest4.photo.full.url), @interest4
           %p.low= @interest4.name
       .rotateInDown
         .intimg
-          = link_to image_tag(@interest5.photo), @interest5
+          = link_to image_tag(@interest5.photo.full.url), @interest5
           %p.low= @interest5.name
       .fadeIn
         .intimg

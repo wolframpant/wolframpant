@@ -1,5 +1,8 @@
 class EventsController < ApplicationController
 
+  # Most of this is here just in case I decide to code in adding and deleting events from the app itself; at this
+  # point they're all entered in final form in db.seeds   
+  
   def new
     @event = Event.new
     authorize @event
@@ -16,6 +19,8 @@ class EventsController < ApplicationController
       render :new
     end
   end
+  
+  # edit and update are available from the app, for current_user (myself) only
   
   def edit
     @event = Event.find(params[:id])

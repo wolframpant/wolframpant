@@ -11,12 +11,7 @@ class WelcomeController < ApplicationController
     
   end
   
-  def about
-    @images=Image.all
-    @projimgs=Projectimage.all
-    @intimgs=Interest.all.photos
-  end
-  
+  # to make Resume available as a PDF file
   def readpdf
     send_file(Rails.root.join("public", "assets", "Resume.pdf").to_s, :disposition => "inline", :type => "application/pdf")
   end

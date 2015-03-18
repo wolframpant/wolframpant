@@ -49,7 +49,7 @@ class InterestsController < ApplicationController
   
   def show
     @interest = Interest.find(params[:id])
-    # @primeimgs = @interest.primeimgs
+    # form for new evints (event/interest relationships) on interests/show page
     @evint = Evint.new
     @events = Event.all
     @evints = @interest.evints

@@ -18,8 +18,10 @@
       %h2= @interest.name
       %p= @interest.description
       %br
+      // only someone logged in as a registered user may add or edit interests, or add events to an interest
       - if current_user
-        %p= link_to 'Edit Interest', edit_interest_path(:id => @interest.id)
+        = link_to 'Edit Interest', edit_interest_path(:id => @interest.id)
+        = link_to 'Add Interest', new_interest_path
         %p Add Events
         = form_for @evint do |f|
           = f.collection_select :event_id, @events, :id, :name, size: 50 

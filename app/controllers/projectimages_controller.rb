@@ -1,5 +1,7 @@
 class ProjectimagesController < ApplicationController
 
+  # for images associated with projects in portfolio
+  
   def new
     @projectimage = Projectimage.new
   end

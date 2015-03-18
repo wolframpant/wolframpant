@@ -2,7 +2,6 @@ class ImagesController < ApplicationController
   
   def new
     @image = Image.new
-    @event = Event.find_by()
     authorize @image
   end
   

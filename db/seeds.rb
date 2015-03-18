@@ -123,18 +123,22 @@ interests = Interest.all
 
 Project.create!(
   name: "Bloccitoff",
+  description: "Allows users to create numerous to-do lists, each with its own cutoff (number of days a todo item will last on the list before being automatically deleted).",
   url: "https://hidden-brushlands-2390.herokuapp.com/")
 
 Project.create!(
   name: "Blocipedia",
+  description: "Allows users to create public or private wikis, with or without collaborators. Users may use Markdown to format their wikis. Users may comment on wikis, and may upload images for their wikis. This app involves two levels of membership, Standard(using the Devise gem) and Premium(using Stripe).",
   url: "http://ellen-blocipedia.herokuapp.com/")
 
 Project.create!(
   name: "Bloccit",
+  description: "Allows users to create, comment on, and vote on posts listed under user-created topics.",
   url: "http://ellen-bloccit.herokuapp.com/")
 
 Project.create!(
   name: "Ellen's Theatre Community",
+  description: "An app designed to help create a community of theatre fans, critics and creators. Users may post new productions of any of playwright Sarah Ruhl's plays, then write their own reviews, give production information, and post images. Other users may comment on these reviews.",
   url: "https://ellens-theatre-community.herokuapp.com/")
 
 projects=Project.all

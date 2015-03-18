@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* bring image title on top of image, rather than below */
 .low {
   -webkit-transform: translateY(-25px);
   -moz-transform: translateY(-25px);
@@ -13,6 +14,7 @@
   margin: 0 auto 0 auto;
 }
 
+/* each image has its own div name with associated transformations and animations */
 .fadeInStraight {
   -webkit-animation: fadeInStraight 6s; /*Chrome, Safari, Opera */
   animation: fadeInStraight 6s;
@@ -30,7 +32,8 @@
     to {opacity: 1;}
 }
 
-.slideUp, .slideRight, .fadInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
+/* formatting all images */
+.slideUp, .slideRight, .fadeInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
   width: 32%;
   height: 49%;
   float: right;
@@ -39,6 +42,7 @@
   color: black;
 }
 
+/*images appear darkened until hovered over */
 .intimg img {
   width: 100%;
   height: auto;  
@@ -51,7 +55,8 @@
   -webkit-filter: brightness(1);
 }
 
-.slideUp:hover, .slideRight:hover, .fadInLeft:hover, .fromCorner:hover, .rotateFromLeft:hover, .rotateInDown:hover, .fadeIn:hover {
+/* each image enlarged when hovered over */
+.slideUp:hover, .slideRight:hover, .fadeInLeft:hover, .fromCorner:hover, .rotateFromLeft:hover, .rotateInDown:hover, .fadeIn:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale (1.2);
   transform: scale(1.2);
@@ -83,6 +88,7 @@
         transform: rotate(-3deg) translateY(7%);}
 }
 
+/* position in which to land once animation is done */
 .slideUp {
   -webkit-transform: rotate(-3deg) translateY(7%);
   -moz-transform: rotate(-3deg) translateY(7%);

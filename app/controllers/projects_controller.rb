@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
 
+  # for Portfolio page
+  
   def index
     @projects = Project.all
   end
