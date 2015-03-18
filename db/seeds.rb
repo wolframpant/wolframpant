@@ -1,3 +1,12 @@
+Event.create!(
+  name: "Web Development",
+  description: "After deciding that I was not interested in writing a PhD dissertation, I looked around for other options. I was thrilled when I found a Web Development course at Harvard Extension. It was a meaty, challenging course that included developing a fundamental understanding of HTML, CSS, JavaScript, and jQuery while building our own websites. I relished the challenge, the puzzles, the new languages, and the creativity involved. It was tremendously satisfying, after years of reading and writing about theatre produced by others, to have the opportunity actually to create something from scratch. Since then, I've pursued a deeper development of these skills. I took a PHP course at UCLA Extension, a graphics design course, and finally spent three months in an intensive Ruby on Rails bootcamp at Bloc.io. In between, I've built and managed sites on WordPress, Drupal and even Weebly."
+)
+
+Event.create!(
+  name: "Bloc.io",
+  description: "Bloc.io is an online intensive computer coding school. They offer several courses, but the one that appealed to me was their Full Stack coding 'bootcamp.' I spent three months studying Ruby on Rails with Bloc, meeting with my mentor/tutor three times a week on Skype and working through their lesson plans in between. During that time, I created four apps from bottom to top (see the Portfolio page of this website)."
+)
 
 Event.create!(
   name: "Quantum Mechanics",
@@ -99,8 +108,8 @@ Interest.create!(
   description: "This theme could really be combined with the 'Science' theme. Chemistry excited me because it seemed to approach the world as a puzzle. Putting the pieces together felt like a way to fundamentally understand the ways in which the world around me works. My love of math, which I followed up to multivariate calculus in my first semester of college, also belongs to this theme. I do the New York Time crossword puzzle every day. In computer coding, I've found an active, useful, and creative way to indulge my love of working out puzzles and thinking logically about algorithms.")
 
 Interest.create!(
-  name: "Different Places and Cultures",
-  description: "I was going to call this section 'Travel,' but then I realized travel isn't the only way I expose myself to new cultures. My favorite way to travel is to go somewhere new and to engage in something, to do something there. Examples would be my Save the Children work in Nepal; my work as a chambermaid in Castletownshend, Ireland; my study of Jewish traditional tests in Jerusalem, and my research on medieval tournaments in London. I've also moved to new locations in the US several times, to San Francisco from Boston, to Boulder from San Francisco, to Denver from Boulder. The energy in the streets varies so from city to city, from neighborhood to neighborhood, and I simply love to experience that. I believe that my wide experience of exploring new cultures and environments, not to mention new skills, will serve me well in adapting to the new world of working with computers technologies.")
+  name: "New Places and Cultures",
+  description: "I was going to call this section 'Travel,' but then I realized travel isn't the only way I expose myself to new cultures. My favorite way to travel is to go somewhere new and to spend some time engaging in something, doing something there. I've also moved to new locations in the US several times, to San Francisco from Boston, to Boulder from San Francisco, to Denver from Boulder. The energy in the streets varies so from city to city, from neighborhood to neighborhood, and I simply love to experience that. I believe that my wide experience of exploring new cultures and environments, not to mention new skills, will serve me well in adapting to the new world of working with computers technologies. And, of course, I'm continually exposing myself to new intellectual challenges and pursuits.")
 
 Interest.create!(
   name: "Analytic Thinking",
