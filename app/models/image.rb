@@ -6,8 +6,5 @@ class Image < ActiveRecord::Base
   mount_uploader :location, ImageUploader
   
   # each event has one prime image, which appears on Interest pages
-  def prime?
-    :prime == true
-  end
   
 end

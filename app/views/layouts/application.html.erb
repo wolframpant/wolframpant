@@ -21,6 +21,7 @@
 
     <% if current_user %>
     <div class = "pull right">
+    <%= link_to "Events", events_path %>
     <%= link_to destroy_user_session_path, method: :delete, class: 'btn btn-primary btn-sm' do %>
               <span class = "glyphicon glyphicon-log-out"></span> 
     <% end %>
