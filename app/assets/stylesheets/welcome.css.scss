@@ -14,7 +14,7 @@
   margin: 0 auto 0 auto;
 }
 
-/* each image has its own div name with associated transformations and animations */
+/* each image has its own div name with associated transformations and animations. This div is the text. */
 .fadeInStraight {
   -webkit-animation: fadeInStraight 6s; /*Chrome, Safari, Opera */
   animation: fadeInStraight 6s;
@@ -35,24 +35,16 @@
 /* formatting all images */
 .slideUp, .slideRight, .fadeInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
   width: 32%;
-  height: 49%;
+  height: auto;
   float: right;
   background-color: white;
   text-align: center;
   color: black;
 }
 
-/*images appear darkened until hovered over */
 .intimg img {
   width: 100%;
   height: auto;  
-  filter: brightness(.5);
-  -webkit-filter: brightness(.5);
-}
-
-.intimg img:hover {
-   filter: brightness(1);
-  -webkit-filter: brightness(1);
 }
 
 /* each image enlarged when hovered over */
@@ -62,6 +54,8 @@
   transform: scale(1.2);
   color: #cc00cc;
   font-weight: bold;
+  filter: none;
+  -webkit-filter: none;
 }
 
 .slideUp {
@@ -73,9 +67,9 @@
     from {-webkit-transform: rotate(0) translateY(-2000%);
           -moz-transform: rotate(0) translateY(-2000%);      
           transform: rotate(0) translateY(-2000%)}
-    to {-webkit-transform: rotate(-3deg) translateY(7%);
-        -moz-transform: rotate(-3deg) translateY(7%);
-        transform: rotate(-3deg) translateY(7%);}
+    to {-webkit-transform: rotate(0) translateY(0);
+        -moz-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0);}
 }
 
 /* Standard syntax */
@@ -83,16 +77,9 @@
     from {-webkit-transform: rotate(0) translateY(-2000%);
           -moz-transform: rotate(0) translateY(-2000%);      
           transform: rotate(0) translateY(-2000%)}
-    to {-webkit-transform: rotate(-3deg) translateY(7%);
-        -moz-transform: rotate(-3deg) translateY(7%);
-        transform: rotate(-3deg) translateY(7%);}
-}
-
-/* position in which to land once animation is done */
-.slideUp {
-  -webkit-transform: rotate(-3deg) translateY(7%);
-  -moz-transform: rotate(-3deg) translateY(7%);
-  transform: rotate(-3deg) translateY(7%);
+    to {-webkit-transform: rotate(0) translateY(0);
+        -moz-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0);}
 }
 
 .slideRight {
@@ -101,28 +88,22 @@
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes slideRight {
-    from {-webkit-transform: rotate(0) translateX(-2000%);
-          -moz-transform: rotate(0) translateX(-2000%);      
-          transform: rotate(0) translateX(-2000%)}
-    to {-webkit-transform: rotate(11deg) translateY(7%);
-        -moz-transform: rotate(11deg) translateY(7%);
-        transform: rotate(11deg) translateY(7%);}
+    from {-webkit-transform: rotate(-11deg) translateX(-2000%);
+          -moz-transform: rotate(-11deg) translateX(-2000%);      
+          transform: rotate(-11deg) translateX(-2000%)}
+    to {-webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);}
 }
 
 /* Standard syntax */
 @keyframes slideRight {
-    from {-webkit-transform: rotate(0) translateX(-2000%);
-          -moz-transform: rotate(0) translateX(-2000%);      
-          transform: rotate(0) translateX(-2000%)}
-    to {-webkit-transform: rotate(11deg) translateY(7%);
-        -moz-transform: rotate(11deg) translateY(7%);
-        transform: rotate(11deg) translateY(7%);}
-}
-
-.slideRight {
-  -webkit-transform: rotate(11deg) translateY(7%);
-  -moz-transform: rotate(11deg) translateY(7%);
-  transform: rotate(11deg) translateY(7%);
+    from {-webkit-transform: rotate(-11deg) translateX(-2000%);
+          -moz-transform: rotate(-11deg) translateX(-2000%);      
+          transform: rotate(-11deg) translateX(-2000%)}
+    to {-webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);}
 }
 
 .fadeInLeft {
@@ -132,31 +113,25 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeInLeft {
     from {opacity: 0;
-          -webkit-transform: rotate(0) translateX(2000%);
-          -moz-transform: rotate(0) translateX(2000%);      
-          transform: rotate(0) translateX(2000%)}
+          -webkit-transform: rotate(8deg) translateX(2000%);
+          -moz-transform: rotate(8deg) translateX(2000%);      
+          transform: rotate(8deg) translateX(2000%)}
     to {opacity: 1;
-        -webkit-transform: rotate(-8deg);
-        -moz-transform: rotate(-8deg);
-        transform: rotate(-8deg)}
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0)}
 }
 
 /* Standard syntax */
 @keyframes fadeInLeft {
     from {opacity: 0;
-          -webkit-transform: rotate(0) translateX(2000%);
-          -moz-transform: rotate(0) translateX(2000%);      
-          transform: rotate(0) translateX(2000%)}
+          -webkit-transform: rotate(8deg) translateX(2000%);
+          -moz-transform: rotate(8deg) translateX(2000%);      
+          transform: rotate(8deg) translateX(2000%)}
     to {opacity: 1;
-        -webkit-transform: rotate(-8deg);
-        -moz-transform: rotate(-8deg);
-        transform: rotate(-8deg)}
-}
-
-.fadeInLeft {
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  transform: rotate(-8deg)
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0)}
 }
 
 .fromCorner {
@@ -168,9 +143,9 @@
     from {-webkit-transform: translateX(-500%) translateY(-500%);
           -moz-transform: translateX(-500%) translateY(-500%);      
           transform: translateX(-500%) translateY(-500%)}
-    to {-webkit-transform: translateY(-8deg);
-        -moz-transform: translateY(-8deg);
-        transform: translateY(-8deg)}
+    to {-webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg)}
 }
 
 /* Standard syntax */
@@ -178,16 +153,10 @@
     from {-webkit-transform: translateX(-500%) translateY(-500%);
           -moz-transform: translateX(-500%) translateY(-500%);      
           transform: translateX(-500%) translateY(-500%)}
-    to {-webkit-transform: translateY(-8deg);
-        -moz-transform: translateY(-8deg);
-        transform: translateY(-8deg)}
+    to {-webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg)}
 }
-
-.fromCorner {
-  -webkit-transform: translateY(-8deg);
-  -moz-transform: translateY(-8deg);
-  transform: translateY(-8deg);
-} 
 
 .rotateInDown {
     -webkit-animation: rotateInDown 5.5s; /* Chrome, Safari, Opera */
@@ -198,9 +167,9 @@
     from {-webkit-transform: rotate(90deg) translateX(500%) translateY(500%);
           -moz-transform: rotate(90deg) translateX(500%) translateY(500%);      
           transform: rotate(90deg) translateX(500%) translateY(500%)}
-    to {-webkit-transform: rotate(-6deg) translateX(20%);
-        -moz-transform: rotate(-6deg) translateX(20%);
-        transform: rotate(-6deg) translateX(20%)}
+    to {-webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg)}
 }
 
 /* Standard syntax */
@@ -208,9 +177,9 @@
     from {-webkit-transform: rotate(90deg) translateX(500%) translateY(500%);
           -moz-transform: rotate(90deg) translateX(500%) translateY(500%);      
           transform: rotate(90deg) translateX(500%) translateY(500%)}
-    to {-webkit-transform: rotate(-6deg) translateX(20%);
-        -moz-transform: rotate(-6deg) translateX(20%);
-        transform: rotate(-6deg) translateX(20%)}
+    to {-webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg);}
 }
 
 .fadeIn {
@@ -221,30 +190,18 @@
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;
-        -webkit-transform: rotate(9deg) translateX(20%) translateY(-20px);
-        -moz-transform: rotate(9deg) translateX(20%) translateY(-20px);
-        transform: rotate(9deg) translateX(20%) translateY(-20px);}
+        -webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg);}
 } 
 
 /* Standard syntax */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;
-        -webkit-transform: rotate(9deg) translateX(20%) translateY(-20px);
-        -moz-transform: rotate(9deg) translateX(20%) translateY(-20px);
-        transform: rotate(9deg) translateX(20%) translateY(-20px);}
-}
-
-.rotateInDown {
-  -webkit-transform: rotate(-6deg) translateX(20%);
-  -moz-transform: rotate(-6deg) translateX(20%);
-  transform: rotate(-6deg) translateX(20%)
-}
-
-.fadeIn {
-  -webkit-transform: rotate(9deg) translateX(20%) translateY(-20px);
-  -moz-transform: rotate(9deg) translateX(20%) translateY(-20px);
-  transform: rotate(9deg) translateX(20%) translateY(-20px);
+        -webkit-transform: translateY(-22deg);
+        -moz-transform: translateY(-22deg);
+        transform: translateY(-22deg);}
 }
 
 .rotateFromLeft {
@@ -256,9 +213,9 @@
     from {-webkit-transform: translateX(-2000%) rotate(120deg);
           -mox-transform: translateX(-2000%) rotate(120deg);
           transform: translateX(-2000%) rotate(120deg);}
-    to {-webkit-transform: rotate(5deg) translateX(20%);
-        -moz-transform: rotate(5deg) translateX(20%);
-        transform: rotate(5deg) translateX(20%)}
+    to {-webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);}
 }
 
 /* Standard syntax */
@@ -268,13 +225,14 @@
           -mox-transform: translateX(-2000%) rotate(120deg);
           transform: translateX(-2000%) rotate(120deg);}
     to {opacity: 1;
-        -webkit-transform: rotate(5deg) translateX(20%);
-        -moz-transform: rotate(5deg) translateX(20%);
-        transform: rotate(5deg) translateX(20%)}
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);}
 }
 
-.rotateFromLeft {
-  -webkit-transform: rotate(5deg) translateX(20%);
-  -moz-transform: rotate(5deg) translateX(20%);
-  transform: rotate(5deg) translateX(20%)
+/* position in which to land; the bottom three images need to slide up a bit */
+.fadeIn, .rotateInDown, .fromCorner {
+  -webkit-transform: translateY(-22px);
+  -mox-transform: translateY(-22px);
+  transform: translateY(-22px);
 }

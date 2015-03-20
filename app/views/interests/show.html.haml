@@ -1,6 +1,6 @@
 .container
   .row
-    .col-md-7
+    .col-xs-7
       %h3 Related Highlights
       - @evints.each do |e|
         .grayscale
@@ -14,7 +14,7 @@
             - if current_user 
               = link_to "Delete #{e.id}", e, :method => :delete, data: {:confirm => 'Are you sure?'}
 
-    .col-md-5
+    .col-xs-5
       %h2= @interest.name
       %p= @interest.description
       %br

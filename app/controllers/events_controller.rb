@@ -24,14 +24,16 @@ class EventsController < ApplicationController
   
   def edit
     @event = Event.find(params[:id])
+    @image = Image.new
     authorize @event
   end
   
   def update
     @event = Event.find(params[:id])
+    @image = Image.new
     authorize @event
     if @event.update_attributes(event_params)
-      redirect_to @event
+      redirect_to edit_event_path(:id => @event.id)
       flash[:notice] = "Success!"
     else
       render :edit

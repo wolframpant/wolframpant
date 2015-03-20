@@ -8,30 +8,31 @@
         %p <em> The images to the right reflect various passions and themes that have been interwoven in my life and work. Click on an image to see a bit about that theme, and to see highlights that relate to it (for computer-related highlights, see "Logic and Puzzles.)"</em>
 
     .col-xs-8
-      .slideUp
-        .intimg
-          = link_to image_tag(@interest1.photo.full.url), @interest1
-          %p.low= @interest1.name
-      .slideRight
-        .intimg
-          = link_to image_tag(@interest2.photo.full.url), @interest2
-          %p.low= @interest2.name
-      .rotateFromLeft
-        .intimg
-          = link_to image_tag( @interest3.photo.full.url), @interest3
-          %p.low= @interest3.name
-      .fromCorner
-        .intimg
-          = link_to image_tag(@interest4.photo.full.url), @interest4
-          %p.low= @interest4.name
-      .rotateInDown
-        .intimg
-          = link_to image_tag(@interest5.photo.full.url), @interest5
-          %p.low= @interest5.name
-      .fadeIn
-        .intimg
-          = link_to image_tag(@interest6.photo), @interest6
-          %p.low= @interest6.name
-      %br
-      %br
-      %br
+      .grayscale
+        .slideUp
+          .intimg
+            = link_to image_tag(@interest1.photo.full.url), @interest1
+            %p.low= @interest1.name
+        .slideRight
+          .intimg
+            = link_to image_tag(@interest2.photo.full.url), @interest2
+            %p.low= @interest2.name
+        .rotateFromLeft
+          .intimg
+            = link_to image_tag( @interest3.photo.full.url), @interest3
+            %p.low= @interest3.name
+        .fromCorner
+          .intimg
+            = link_to image_tag(@interest4.photo.full.url), @interest4
+            %p.low= @interest4.name
+        .rotateInDown
+          .intimg
+            = link_to image_tag(@interest5.photo.full.url), @interest5
+            %p.low= @interest5.name
+        .fadeIn
+          .intimg
+            = link_to image_tag(@interest6.photo.full.url), @interest6
+            %p.low= @interest6.name
+        %br
+        %br
+        %br
