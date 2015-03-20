@@ -7,7 +7,6 @@
           .inteventimg
             .high
               = link_to e.event.name, e.event
-            %br
             - if (e.event.images.exists?)
               = link_to image_tag(e.event.images.find_by(:prime => true).location.full.url), e.event
             %br

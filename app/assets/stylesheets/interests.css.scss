@@ -5,10 +5,12 @@
 .inteventimg {
   float: left;
   width: 33%;
+  heightL: 49%;
 }
 
 .inteventimg img {
   width: 100%;
+  height: 100%;
 }
 
 /* hovering enlarges images */
@@ -16,25 +18,21 @@
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   transform: scale(1.2);
+  z-index: 1999;
 }
 
 .inteventimg:hover a {
   color: #cc00cc;
 }
 
-/* bring image titles on top of images, rather than above */
+/* names above images */
 .high {
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  transform: translateY(50px);
-  background-color: white;
-  opacity: .5;
+  background-color: gray;
   width: 100%;
   text-align: center;
-  margin: 0 auto 0 auto;
   z-index: 999;
 }
 
 .high a {
-  color: black;
+  color: white;
 }
