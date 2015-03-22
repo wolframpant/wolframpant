@@ -22,7 +22,7 @@
           - # container for each image
           .projectimage
             = link_to image_tag(i.location.full.url), projectimage_path(:id => i.id)
-            %p= i.name
+            = i.name
             - # Only the developer should have a sign-in; current_user will then refer to the developer
             - if current_user
               = link_to "Delete", {:id => i.id, :controller => 'projectimages', :action => 'destroy'}, :method => :delete, data: {confirm: 'Do you want to delete #{i.name}?'}
