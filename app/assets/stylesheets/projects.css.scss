@@ -8,13 +8,15 @@
   float: left;
   margin-top: 10px;
   width: 25%;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
+  text-align: center;
 }
 
 .projectimage img {
   width: 90%;
+  margin: 0 auto 0 auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
 
 .projectimage:hover {
