@@ -14,6 +14,10 @@
   margin: 0 auto 0 auto;
 }
 
+.low a {
+  font-weight: normal;
+}
+
 /* each image has its own div name with associated transformations and animations. This div is the text. */
 .fadeInStraight {
   -webkit-animation: fadeInStraight 6s; /*Chrome, Safari, Opera */
@@ -33,7 +37,7 @@
 }
 
 /* formatting all images */
-.slideUp, .slideRight, .fadeInLeft, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
+.slideUp, .slideRight, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
   width: 32%;
   height: auto;
   float: right;
@@ -42,6 +46,12 @@
   color: black;
 }
 
+@media screen and (max-width: 650px) {
+  .slideUp, .slideRight, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
+    width: 48%;
+    height: auto;
+  }
+}
 .intimg img {
   width: 100%;
   height: auto;  

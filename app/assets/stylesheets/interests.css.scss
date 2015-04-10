@@ -2,10 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* width of image wrapper, including title */
 .inteventimg {
   float: left;
   width: 33%;
   heightL: 49%;
+}
+
+@media screen and (max-width: 950px) {
+  .inteventimg {
+      width: 48%;
+   }
+}
+
+
+@media screen and (max-width: 950) {
+  .inteventimg {
+    float: left;
+    width: 48%;
+    height: 49%;
+  }
 }
 
 .inteventimg img {
@@ -27,12 +43,12 @@
 
 /* names above images */
 .high {
-  background-color: gray;
+  background-color: #cfcfcf;
   width: 100%;
   text-align: center;
-  z-index: 999;
 }
 
 .high a {
-  color: white;
+  color: black;
+  font-weight: normal;
 }
