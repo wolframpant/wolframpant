@@ -45,12 +45,17 @@
   text-align: center;
   color: black;
 }
-
+// Switch from three images per row to two as screen gets narrower
 @media screen and (max-width: 650px) {
   .slideUp, .slideRight, .fromCorner, .rotateFromLeft, .rotateInDown, .fadeIn {
     width: 48%;
     height: auto;
   }
+  .rotateFromLeft {
+    -webkit-transform: translateY(-22px);
+    -mox-transform: translateY(-22px);
+    transform: translateY(-22px);
+}
 }
 .intimg img {
   width: 100%;

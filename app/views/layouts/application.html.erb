@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="container">
-  <h1 class="epw">ELLEN P. WOLFSON</h1>
+  <div class="epw">ELLEN P. WOLFSON</div>
   <!-- bootstrap classes -->
   <ul class="nav nav-tabs">
     <li><%= link_to "HOME", welcome_index_path %></li>
@@ -39,5 +39,6 @@
 
   <%= yield %>
 
+  <script>$('body').flowtype();</script>
 </body>
 </html>
