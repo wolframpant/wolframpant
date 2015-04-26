@@ -19,7 +19,7 @@
          maximum   : 1200,
          minimum   : 300,
          maxFont   : 18,
-         minFont   : 8,
+         minFont   : 6,
          fontRatio : 30
       }, options),
 
