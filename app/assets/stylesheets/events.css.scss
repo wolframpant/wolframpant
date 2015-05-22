@@ -9,13 +9,7 @@
 .eventimg img {
   width: 100%;
   height: 100%;
+  filter: none;
 } 
 
-.eventimg:hover {
-  filter: saturate(150%);
-  -webkit-filter: saturate(150%);
-  -webkit-transform: scale(1.5) translateY(-50px);
-  -moz-transform: scale (1.5) translateY(-50px);
-  transform: scale(1.5) translateY(-50px); 
-  z-index: 1999;
-}
+

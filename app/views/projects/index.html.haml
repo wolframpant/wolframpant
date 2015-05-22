@@ -1,14 +1,14 @@
 .container
 
   %h2 Portfolio
-  %small Click on image to see larger version; click on project name to see it live!
   - if current_user
     = link_to "Add Project", new_project_path
     %br
     %br
   - @projects.each do |p|
     .project
-      = link_to p.name, p.url, :target => "_blank"
+      = link_to p.name, p.url, :target => "_blank" 
+      %small (Click on project name to go to live app)
       %br
       = p.description
       - # Only the developer should have a sign-in; current_user will then refer to the developer

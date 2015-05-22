@@ -18,9 +18,9 @@
       var settings = $.extend({
          maximum   : 1200,
          minimum   : 300,
-         maxFont   : 18,
+         maxFont   : 14,
          minFont   : 6,
-         fontRatio : 30
+         fontRatio : 50
       }, options),
 
 // Do the magic math
