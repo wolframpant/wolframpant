@@ -2,7 +2,15 @@
 .eventimg {
   float: left;
   width: 25%;
-  height: 200px;
+  height: auto;
+}
+
+// Switch from four images per row to two as screen gets narrower
+@media screen and (max-width: 650px) {
+  .eventimg {
+    width: 48%;
+    height: auto;
+  }
 }
 
 /* have images press up next to one another */
